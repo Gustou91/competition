@@ -1,0 +1,13 @@
+c:\users\bgarcin\Documents\Projects\Competition\Competition\bin\Debug\Competition.exe
+c:\users\bgarcin\Documents\Projects\Competition\Competition\bin\Debug\Competition.pdb
+c:\users\bgarcin\Documents\Projects\Competition\Competition\bin\Debug\System.Data.SQLite.dll
+c:\users\bgarcin\Documents\Projects\Competition\Competition\bin\Debug\System.Data.SQLite.pdb
+c:\users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.csprojResolveAssemblyReference.cache
+c:\users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frm_main.resources
+c:\users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.Properties.Resources.resources
+c:\users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.csproj.GenerateResource.Cache
+c:\users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.exe
+c:\users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.pdb
+c:\users\bgarcin\Documents\Projects\Competition\Competition\bin\Debug\SQLite.Interop.dll
+c:\users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frmAddCompet.resources
+C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frmCateg.resources
