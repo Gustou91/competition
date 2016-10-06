@@ -30,33 +30,40 @@
         {
             this.dgvCateg = new System.Windows.Forms.DataGridView();
             this.gbCateg = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tb_nom = new System.Windows.Forms.TextBox();
-            this.nudAgeMin = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.nudAgeMax = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.cbSexe = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.nudPoidsMax = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.nudPoidsMin = new System.Windows.Forms.NumericUpDown();
-            this.cbSexe = new System.Windows.Forms.ComboBox();
-            this.btnOk = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.nudAgeMax = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.nudAgeMin = new System.Windows.Forms.NumericUpDown();
+            this.tb_nom = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCateg)).BeginInit();
             this.gbCateg.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudAgeMin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudAgeMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPoidsMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPoidsMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAgeMax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAgeMin)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvCateg
             // 
+            this.dgvCateg.AllowUserToAddRows = false;
+            this.dgvCateg.AllowUserToOrderColumns = true;
+            this.dgvCateg.AllowUserToResizeColumns = false;
+            this.dgvCateg.AllowUserToResizeRows = false;
             this.dgvCateg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCateg.Location = new System.Drawing.Point(12, 140);
+            this.dgvCateg.MultiSelect = false;
             this.dgvCateg.Name = "dgvCateg";
             this.dgvCateg.Size = new System.Drawing.Size(795, 189);
             this.dgvCateg.TabIndex = 0;
+            this.dgvCateg.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dgvCateg_RowsRemoved);
+            this.dgvCateg.SelectionChanged += new System.EventHandler(this.dgvCateg_SelectionChanged);
             // 
             // gbCateg
             // 
@@ -79,53 +86,26 @@
             this.gbCateg.TabStop = false;
             this.gbCateg.Text = "Caégorie";
             // 
-            // label1
+            // btnOk
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nom";
+            this.btnOk.Location = new System.Drawing.Point(644, 87);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(75, 23);
+            this.btnOk.TabIndex = 11;
+            this.btnOk.Text = "Enregistrer";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
-            // tb_nom
+            // cbSexe
             // 
-            this.tb_nom.Location = new System.Drawing.Point(42, 17);
-            this.tb_nom.Name = "tb_nom";
-            this.tb_nom.Size = new System.Drawing.Size(220, 20);
-            this.tb_nom.TabIndex = 1;
-            // 
-            // nudAgeMin
-            // 
-            this.nudAgeMin.Location = new System.Drawing.Point(338, 17);
-            this.nudAgeMin.Name = "nudAgeMin";
-            this.nudAgeMin.Size = new System.Drawing.Size(51, 20);
-            this.nudAgeMin.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(286, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Age min";
-            // 
-            // nudAgeMax
-            // 
-            this.nudAgeMax.Location = new System.Drawing.Point(466, 17);
-            this.nudAgeMax.Name = "nudAgeMax";
-            this.nudAgeMax.Size = new System.Drawing.Size(51, 20);
-            this.nudAgeMax.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(407, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Age max";
+            this.cbSexe.FormattingEnabled = true;
+            this.cbSexe.Items.AddRange(new object[] {
+            "Garçon",
+            "Fille"});
+            this.cbSexe.Location = new System.Drawing.Point(557, 20);
+            this.cbSexe.Name = "cbSexe";
+            this.cbSexe.Size = new System.Drawing.Size(121, 21);
+            this.cbSexe.TabIndex = 10;
             // 
             // label4
             // 
@@ -159,26 +139,53 @@
             this.nudPoidsMin.Size = new System.Drawing.Size(51, 20);
             this.nudPoidsMin.TabIndex = 6;
             // 
-            // cbSexe
+            // label3
             // 
-            this.cbSexe.FormattingEnabled = true;
-            this.cbSexe.Items.AddRange(new object[] {
-            "Garçon",
-            "Fille"});
-            this.cbSexe.Location = new System.Drawing.Point(557, 20);
-            this.cbSexe.Name = "cbSexe";
-            this.cbSexe.Size = new System.Drawing.Size(121, 21);
-            this.cbSexe.TabIndex = 10;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(407, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Age max";
             // 
-            // btnOk
+            // nudAgeMax
             // 
-            this.btnOk.Location = new System.Drawing.Point(644, 87);
-            this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(75, 23);
-            this.btnOk.TabIndex = 11;
-            this.btnOk.Text = "Enregistrer";
-            this.btnOk.UseVisualStyleBackColor = true;
-            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            this.nudAgeMax.Location = new System.Drawing.Point(466, 17);
+            this.nudAgeMax.Name = "nudAgeMax";
+            this.nudAgeMax.Size = new System.Drawing.Size(51, 20);
+            this.nudAgeMax.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(286, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Age min";
+            // 
+            // nudAgeMin
+            // 
+            this.nudAgeMin.Location = new System.Drawing.Point(338, 17);
+            this.nudAgeMin.Name = "nudAgeMin";
+            this.nudAgeMin.Size = new System.Drawing.Size(51, 20);
+            this.nudAgeMin.TabIndex = 2;
+            // 
+            // tb_nom
+            // 
+            this.tb_nom.Location = new System.Drawing.Point(42, 17);
+            this.tb_nom.Name = "tb_nom";
+            this.tb_nom.Size = new System.Drawing.Size(220, 20);
+            this.tb_nom.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nom";
             // 
             // frmCateg
             // 
@@ -193,10 +200,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCateg)).EndInit();
             this.gbCateg.ResumeLayout(false);
             this.gbCateg.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudAgeMin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudAgeMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPoidsMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPoidsMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAgeMax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAgeMin)).EndInit();
             this.ResumeLayout(false);
 
         }

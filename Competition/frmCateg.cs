@@ -13,6 +13,8 @@ namespace Competition
     {
 
         private Dao dao = Dao.Instance;
+        private object _selectedCategId;
+
 
         public frmCateg()
         {
@@ -24,6 +26,8 @@ namespace Competition
             dao.openBase();
 
             dgvCateg.DataSource = dao.loadCategories();
+            // Resize the DataGridView columns to fit the newly loaded content.
+            dgvCateg.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
 
             dao.closeBase();
         }
@@ -34,5 +38,31 @@ namespace Competition
             Categorie categ = new Categorie(tb_nom.Text, (int)nudAgeMin.Value, (int)nudAgeMax.Value, sexe, (int)nudPoidsMin.Value, (int) nudPoidsMax.Value);
             categ.insert();
         }
+
+        private void dgvCateg_SelectionChanged(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in dgvCateg.SelectedRows)
+            {
+                _selectedCategId = row.Cells[0].Value;
+                //string value2 = row.Cells[1].Value.ToString();
+                //...
+            }
+        }
+
+        private void dgvCateg_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
+        {
+            if (_selectedCategId != null)
+            {
+                int categId = Convert.ToInt32(_selectedCategId);
+                dao.deleteCategorie(categId);
+            }
+        }
+
+
+
+
+
+
+
     }
 }

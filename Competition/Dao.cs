@@ -274,6 +274,22 @@ namespace Competition
             return true;
         }
 
+        public Boolean deleteCategorie(int id)
+        {
+
+            openBase();
+
+            string sql = "DELETE FROM categorie WHERE cat_id = " + id;
+
+            using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
+            {
+                cmd.ExecuteNonQuery();
+            }
+            closeBase();
+
+            return true;
+        }
+
         public Categorie getCategorie(int id)
         {
 
@@ -316,6 +332,10 @@ namespace Competition
             dsCateg.Reset();
             _DB.Fill(dsCateg, "Categorie");
             dtCateg = dsCateg.Tables["Categorie"];
+
+            //_DB.DeleteCommand = new SQLiteCommand("DELETE FROM categorie where cat_id=@Id");
+            //_DB.DeleteCommand.Parameters.Add("@Id");
+
 
             return dtCateg;
 
