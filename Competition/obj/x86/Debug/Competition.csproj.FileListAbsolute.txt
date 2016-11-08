@@ -11,3 +11,4 @@ c:\users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Compet
 c:\users\bgarcin\Documents\Projects\Competition\Competition\bin\Debug\SQLite.Interop.dll
 c:\users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frmAddCompet.resources
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frmCateg.resources
+C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frmMembre.resources

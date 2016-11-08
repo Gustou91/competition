@@ -36,9 +36,9 @@
             this.inscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.créerLesPoulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gérerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gérerLesCatégoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.résultatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableauDeBordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gérerLesCatégoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +66,7 @@
             // quitterToolStripMenuItem
             // 
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.quitterToolStripMenuItem.Text = "Quitter";
             // 
             // competitionToolStripMenuItem
@@ -91,6 +91,7 @@
             this.inscriptionToolStripMenuItem.Name = "inscriptionToolStripMenuItem";
             this.inscriptionToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.inscriptionToolStripMenuItem.Text = "Inscription";
+            this.inscriptionToolStripMenuItem.Click += new System.EventHandler(this.inscriptionToolStripMenuItem_Click);
             // 
             // créerLesPoulesToolStripMenuItem
             // 
@@ -106,6 +107,13 @@
             this.gérerToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.gérerToolStripMenuItem.Text = "Gérer";
             // 
+            // gérerLesCatégoriesToolStripMenuItem
+            // 
+            this.gérerLesCatégoriesToolStripMenuItem.Name = "gérerLesCatégoriesToolStripMenuItem";
+            this.gérerLesCatégoriesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.gérerLesCatégoriesToolStripMenuItem.Text = "Gérer les catégories";
+            this.gérerLesCatégoriesToolStripMenuItem.Click += new System.EventHandler(this.gérerLesCatégoriesToolStripMenuItem_Click);
+            // 
             // résultatsToolStripMenuItem
             // 
             this.résultatsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -120,13 +128,6 @@
             this.tableauDeBordToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.tableauDeBordToolStripMenuItem.Text = "Tableau de bord";
             // 
-            // gérerLesCatégoriesToolStripMenuItem
-            // 
-            this.gérerLesCatégoriesToolStripMenuItem.Name = "gérerLesCatégoriesToolStripMenuItem";
-            this.gérerLesCatégoriesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.gérerLesCatégoriesToolStripMenuItem.Text = "Gérer les catégories";
-            this.gérerLesCatégoriesToolStripMenuItem.Click += new System.EventHandler(this.gérerLesCatégoriesToolStripMenuItem_Click);
-            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,7 +137,8 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_main";
-            this.Text = "USM - Ju JIT SO: Gestion des compétitions";
+            this.Text = "USM - JU JIT SO: Gestion des compétitions";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

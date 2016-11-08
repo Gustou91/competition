@@ -234,6 +234,10 @@ namespace Competition
                 closeBase();
 
             }
+            else
+            {
+                updateCategorie(categ);
+            }
 
             return true;
         }
@@ -244,9 +248,9 @@ namespace Competition
             openBase();
 
             string sql = "UPDATE categorie SET cat_nom = '" + categ.getName() + "', cat_agemin = " + categ.getAgeMin().ToString()
-                 + ", cat_agemax = " + categ.getAgeMax().ToString() + ", sexe = '" + categ.getSexe() + "', cat_poidsmin = "
+                 + ", cat_agemax = " + categ.getAgeMax().ToString() + ", cat_sexe = '" + categ.getSexe() + "', cat_poidsmin = "
                  + categ.getPoidsMin().ToString() + ", cat_poidsmax = " + categ.getPoidsMax().ToString()
-                 + "', cat_modification = DATETIME('NOW')))"
+                 + ", cat_modification = DATETIME('NOW')"
                 + " WHERE cat_id = " + categ.getId();
 
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
@@ -338,6 +342,143 @@ namespace Competition
 
 
             return dtCateg;
+
+        }
+
+
+
+
+        public Boolean insertMembre(Membre mbr)
+        {
+
+            Membre membre = getMembre(mbr.getId());
+
+            if (membre.getNom() == null)
+            {
+
+                openBase();
+
+                // Insertion de la nouvelel catégorie.
+                string sql = "INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)"
+                    + "values ('" + mbr.getNom() + "', '" + mbr.getPrenom() + "', '" + mbr.getSexe()
+                    + "', " + mbr.getAge().ToString() + ", " + mbr.getPoids().ToString() + ", DATETIME('NOW'))";
+
+                using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
+                {
+                    cmd.ExecuteNonQuery();
+
+                }
+
+
+                closeBase();
+
+            }
+            else
+            {
+                updateMembre(membre);
+            }
+
+            return true;
+        }
+
+        public Boolean updateMembre(Membre membre)
+        {
+
+            openBase();
+
+            string sql = "UPDATE categorie SET mem_nom = '" + membre.getNom() + "', mem_prenom = '" + membre.getPrenom()
+                 + ", mem_sexe = '" + membre.getSexe() + "', mem_age = " + membre.getAge().ToString() 
+                 + ", mem_poids = " + membre.getPoids().ToString() + ", mem_modification = DATETIME('NOW')"
+                + " WHERE mem_id = " + membre.getId();
+
+            using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
+            {
+                cmd.ExecuteNonQuery();
+            }
+            closeBase();
+
+            return true;
+        }
+
+        public Boolean deleteMembre(Membre membre)
+        {
+
+            openBase();
+
+            string sql = "DELETE FROM membre WHERE mem_id = " + membre.getId();
+
+            using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
+            {
+                cmd.ExecuteNonQuery();
+            }
+            closeBase();
+
+            return true;
+        }
+
+        public Boolean deleteMembre(int id)
+        {
+
+            openBase();
+
+            string sql = "DELETE FROM membre WHERE mem_id = " + id;
+
+            using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
+            {
+                cmd.ExecuteNonQuery();
+            }
+            closeBase();
+
+            return true;
+        }
+
+        public Membre getMembre(int id)
+        {
+
+            openBase();
+
+            string sql = "SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = " + id;
+            Membre membre = new Membre();
+
+            using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
+            {
+                using (SQLiteDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Categorie.Sexe sexe = reader.GetString(3) == "F" ? Categorie.Sexe.FEMALE : Categorie.Sexe.MALE;
+                        membre = new Membre((int)reader.GetInt16(0),
+                                                reader.GetString(1),
+                                                reader.GetString(2),
+                                                sexe,
+                                                (int)reader.GetInt16(4),
+                                                (int)reader.GetInt16(5));
+                    }
+                }
+            }
+
+
+
+            closeBase();
+
+            return membre;
+        }
+
+        public DataTable loadMembres()
+        {
+
+            DataSet dsMembre = new DataSet();
+            DataTable dtMembre = new DataTable();
+            _DB = new SQLiteDataAdapter("SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation FROM membre;", _dbConnection);
+            dsMembre.Reset();
+            _DB.Fill(dsMembre, "Membre");
+            dtMembre = dsMembre.Tables["Membre"];
+
+            //_DB.DeleteCommand = new SQLiteCommand("DELETE FROM categorie where cat_id=@Id");
+            //_DB.DeleteCommand.Parameters.Add("@Id");
+
+
+            return dtMembre;
 
         }
 

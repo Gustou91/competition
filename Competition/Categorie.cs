@@ -8,7 +8,7 @@ namespace Competition
     class Categorie
     {
 
-        private int _id;
+        private int _id = -1;
         private string _name;
         private int _ageMin;
         private int _ageMax;
@@ -68,6 +68,7 @@ namespace Competition
             else
                 throw new System.ArgumentException("Le poids minimal doit être > 0 et <= au poids max.");
 
+            _sexe = sexe;
             _init = true;
         }
 

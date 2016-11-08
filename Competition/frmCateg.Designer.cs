@@ -30,6 +30,7 @@
         {
             this.dgvCateg = new System.Windows.Forms.DataGridView();
             this.gbCateg = new System.Windows.Forms.GroupBox();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
             this.cbSexe = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -60,13 +61,15 @@
             this.dgvCateg.Location = new System.Drawing.Point(12, 140);
             this.dgvCateg.MultiSelect = false;
             this.dgvCateg.Name = "dgvCateg";
-            this.dgvCateg.Size = new System.Drawing.Size(795, 189);
+            this.dgvCateg.Size = new System.Drawing.Size(670, 298);
             this.dgvCateg.TabIndex = 0;
+            this.dgvCateg.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCateg_CellDoubleClick);
             this.dgvCateg.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dgvCateg_RowsRemoved);
             this.dgvCateg.SelectionChanged += new System.EventHandler(this.dgvCateg_SelectionChanged);
             // 
             // gbCateg
             // 
+            this.gbCateg.Controls.Add(this.btnCancel);
             this.gbCateg.Controls.Add(this.btnOk);
             this.gbCateg.Controls.Add(this.cbSexe);
             this.gbCateg.Controls.Add(this.label4);
@@ -81,14 +84,24 @@
             this.gbCateg.Controls.Add(this.label1);
             this.gbCateg.Location = new System.Drawing.Point(12, 12);
             this.gbCateg.Name = "gbCateg";
-            this.gbCateg.Size = new System.Drawing.Size(795, 122);
+            this.gbCateg.Size = new System.Drawing.Size(670, 122);
             this.gbCateg.TabIndex = 1;
             this.gbCateg.TabStop = false;
-            this.gbCateg.Text = "Caégorie";
+            this.gbCateg.Text = "Catégorie";
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(503, 77);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 12;
+            this.btnCancel.Text = "Annuler";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(644, 87);
+            this.btnOk.Location = new System.Drawing.Point(584, 77);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 11;
@@ -102,7 +115,7 @@
             this.cbSexe.Items.AddRange(new object[] {
             "Garçon",
             "Fille"});
-            this.cbSexe.Location = new System.Drawing.Point(557, 20);
+            this.cbSexe.Location = new System.Drawing.Point(538, 16);
             this.cbSexe.Name = "cbSexe";
             this.cbSexe.Size = new System.Drawing.Size(121, 21);
             this.cbSexe.TabIndex = 10;
@@ -191,9 +204,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(819, 341);
+            this.ClientSize = new System.Drawing.Size(692, 450);
             this.Controls.Add(this.gbCateg);
             this.Controls.Add(this.dgvCateg);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmCateg";
             this.Text = "Gestion des catégories";
             this.Load += new System.EventHandler(this.frmCateg_Load);
@@ -224,6 +238,7 @@
         private System.Windows.Forms.NumericUpDown nudAgeMin;
         private System.Windows.Forms.TextBox tb_nom;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCancel;
 
     }
 }

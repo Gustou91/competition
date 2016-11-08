@@ -39,5 +39,13 @@ namespace Competition
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void inscriptionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMembre frm = new frmMembre();
+            frm.MdiParent = this;
+            frm.Show();
+
+        }
     }
 }

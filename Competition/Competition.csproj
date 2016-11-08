@@ -52,6 +52,12 @@
   <ItemGroup>
     <Compile Include="Categorie.cs" />
     <Compile Include="Competition.cs" />
+    <Compile Include="frmMembre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMembre.Designer.cs">
+      <DependentUpon>frmMembre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dao.cs" />
     <Compile Include="frmAddCompet.cs">
       <SubType>Form</SubType>
@@ -71,8 +77,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Membre.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMembre.resx">
+      <DependentUpon>frmMembre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAddCompet.resx">
       <DependentUpon>frmAddCompet.cs</DependentUpon>
     </EmbeddedResource>
