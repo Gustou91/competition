@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using log4net;
+using log4net.Config;
 
 namespace Competition
 {
@@ -23,17 +25,26 @@ namespace Competition
 
         private Dao dao = Dao.Instance;
 
+        private static readonly ILog logger = LogManager.GetLogger(typeof(frm_main));
 
         public Categorie()
         {
+            logger.Info("Categorie: Création d'une instance.");
         }
+
 
         public Categorie(int id, string name, int ageMin, int ageMax, Categorie.Sexe sexe, int poidsMin, int poidsMax)
         {
             if (id != null)
+            {
                 _id = id;
+                logger.Info("Categorie: Création de l'instance " + _id);
+            }
             else
+            {
+                logger.Error("Categorie: L'identifiant doit être initialisé.");
                 throw new System.ArgumentException("L'identifiant doit être initialisé.");
+            }
 
             createCategorie(name, ageMin, ageMax, sexe, poidsMin, poidsMax);
 
@@ -41,6 +52,7 @@ namespace Competition
 
         public Categorie(string name, int ageMin, int ageMax, Categorie.Sexe sexe, int poidsMin, int poidsMax)
         {
+            logger.Info("Categorie: Création de l'instance " + name);
             createCategorie(name, ageMin, ageMax, sexe, poidsMin, poidsMax);
         }
 
@@ -50,7 +62,10 @@ namespace Competition
             if (name != null && name != String.Empty)
                 _name = name;
             else
-                throw new System.ArgumentException("Le nom ne peut être vide");
+            {
+                logger.Error("createCategorie: Le nom ne peut être vide.");
+                throw new System.ArgumentException("Le nom ne peut être vide.");
+            }
 
             if (ageMin > 0 && ageMin <= ageMax)
             {
@@ -58,7 +73,10 @@ namespace Competition
                 _ageMax = ageMax;
             }
             else
+            {
+                logger.Error("createCategorie: L'age minimal doit être > 0 et <= à l'age max.");
                 throw new System.ArgumentException("L'age minimal doit être > 0 et <= à l'age max.");
+            }
 
             if (poidsMin > 0 && poidsMin <= poidsMax)
             {
@@ -66,10 +84,20 @@ namespace Competition
                 _poidsMax = poidsMax;
             }
             else
+            {
+                logger.Error("createCategorie: Le poids minimal doit être > 0 et <= au poids max.");
                 throw new System.ArgumentException("Le poids minimal doit être > 0 et <= au poids max.");
+            }
 
             _sexe = sexe;
             _init = true;
+
+            logger.Info("createCategorie: nom = " + _name);
+            logger.Info("createCategorie: age min =" + _ageMin);
+            logger.Info("createCategorie: age max = " + _ageMax);
+            logger.Info("createCategorie: poids min = " + _poidsMin);
+            logger.Info("createCategorie: poids max = " + _poidsMax);
+            logger.Info("createCategorie: sexe = " + _sexe.ToString());
         }
 
 
@@ -114,19 +142,28 @@ namespace Competition
         public void insert()
         {
             if (_init)
+            {
+                logger.Info("Categorie.insert.");
                 dao.insertCategorie(this);
+            }
         }
 
         public void update()
         {
             if (_init)
+            {
+                logger.Info("Categorie.update.");
                 dao.updateCategorie(this);
+            }
         }
 
         public void delete()
         {
             if (_init)
+            {
+                logger.Info("Categorie.delete.");
                 dao.deleteCategorie(this);
+            }
         }
     }
 }

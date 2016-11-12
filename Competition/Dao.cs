@@ -6,6 +6,8 @@ using System.Data.SQLite;
 using System.IO;
 using System.Reflection;
 using System.Data;
+using log4net;
+using log4net.Config;
 
 namespace Competition
 {
@@ -20,6 +22,7 @@ namespace Competition
         private SQLiteConnection _dbConnection = new SQLiteConnection("Data Source=USM-JUJITSO-COMPET.sqlite;Version=3;");
         private SQLiteDataAdapter _DB;
 
+        private static readonly ILog logger = LogManager.GetLogger(typeof(Dao));
 
         private Dao ()
         {
@@ -49,6 +52,8 @@ namespace Competition
 
             if (!File.Exists(_strFullPathDB))
             {
+                logger.Info("Création de la base de données.");
+
                 SQLiteConnection.CreateFile(_strFullPathDB);
 
                 openBase();
@@ -95,6 +100,9 @@ namespace Competition
                 command.ExecuteNonQuery();
 
                 closeBase();
+
+                logger.Info("base créée.");
+
             }
 
             return true;
@@ -108,13 +116,18 @@ namespace Competition
             {
                 if (_dbConnection.State != System.Data.ConnectionState.Open)
                 {
+                    logger.Info("openBase: Ouverture de la base de données.");
                     _dbConnection.Open();
                 }
+                else
+                    logger.Info("openBase: La base est déjà ouverte.");
+
                 return true;
             }
 
             catch (Exception e)
             {
+                logger.Info("openBase: Erreur d'ouverture de la base de données - " + e.Message);
                 throw new Exception(e.Message);
             }
         }
@@ -127,14 +140,19 @@ namespace Competition
             {
                 if (_dbConnection.State == System.Data.ConnectionState.Open)
                 {
+
+                    logger.Info("closeBase: Fermeture de la base de données.");
                     _dbConnection.Close();
                 }
+                else logger.Info("closeBase: La base est déjà fermée.");
+
 
                 return true;
             }
 
             catch (Exception e)
             {
+                logger.Info("openBase: Erreur de fermeture de la base de données - " + e.Message);
                 throw new Exception(e.Message);
             }
         }
@@ -148,6 +166,7 @@ namespace Competition
             openBase();
 
             string sql = "SELECT com_nom FROM competition WHERE com_active = 1";
+            logger.Info("existsActiveCompetition: requête = " + sql);
 
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
             {
@@ -155,6 +174,8 @@ namespace Competition
                 {
                     reader.Read();
                     name = reader.GetString(0);
+                    logger.Info("existsActiveCompetition: name = " + name);
+
                 }
             }
 
@@ -171,6 +192,7 @@ namespace Competition
 
             // Désactive toutes les compétitions actives.
             string sql = "UPDATE competition set com_active = 0 WHERE com_active = 1";
+            logger.Info("insertCompetition: requête de désactivation de la competition précédente = " + sql);
 
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
             {
@@ -179,6 +201,7 @@ namespace Competition
                 // Ajout de la nouvelle compétition.
                 sql = "INSERT INTO competition (com_nom, com_active, com_creation) values ('"
                     + name + "', 1, DATETIME('NOW'))";
+                logger.Info("insertCompetition: requête de création de la nouvelle competition = " + sql);
 
                 cmd.CommandText = sql;
                 cmd.ExecuteNonQuery();
@@ -198,6 +221,7 @@ namespace Competition
 
             string sql = "UPDATE competition SET com_nom = '" + name + "', com_creation = DATETIME('NOW')))" 
                 + " WHERE com_id = " + id.ToString();
+            logger.Info("updateCompetition: requête = " + sql);
 
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
             {
@@ -223,6 +247,7 @@ namespace Competition
                 string sql = "INSERT INTO categorie (cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation)"
                     + "values ('" + categ.getName() + "', " + categ.getAgeMin().ToString() + ", " + categ.getAgeMax().ToString() + ", '"
                     + categ.getSexe() + "', " + categ.getPoidsMin().ToString() + ", " + categ.getPoidsMax().ToString() + ", DATETIME('NOW'))";
+                logger.Info("insertCategorie: requête = " + sql);
 
                 using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
                 {
@@ -252,6 +277,7 @@ namespace Competition
                  + categ.getPoidsMin().ToString() + ", cat_poidsmax = " + categ.getPoidsMax().ToString()
                  + ", cat_modification = DATETIME('NOW')"
                 + " WHERE cat_id = " + categ.getId();
+            logger.Info("updateCategorie: requête = " + sql);
 
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
             {
@@ -268,6 +294,7 @@ namespace Competition
             openBase();
 
             string sql = "DELETE FROM categorie WHERE cat_id = " + categ.getId();
+            logger.Info("deleteCategorie: requête = " + sql);
 
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
             {
@@ -284,6 +311,7 @@ namespace Competition
             openBase();
 
             string sql = "DELETE FROM categorie WHERE cat_id = " + id;
+            logger.Info("deleteCategorie: requête = " + sql);
 
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
             {
@@ -300,6 +328,8 @@ namespace Competition
             openBase();
 
             string sql = "SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation FROM categorie WHERE cat_id = " + id;
+            logger.Info("getCategorie: requête = " + sql);
+
             Categorie categ = new Categorie();
 
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
@@ -332,7 +362,11 @@ namespace Competition
 
             DataSet dsCateg = new DataSet();
             DataTable dtCateg = new DataTable();
-            _DB = new SQLiteDataAdapter("SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie", _dbConnection);
+            string sql = "SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie";
+            logger.Info("loadCategories: requête = " + sql);
+
+            _DB = new SQLiteDataAdapter(sql, _dbConnection);
+
             dsCateg.Reset();
             _DB.Fill(dsCateg, "Categorie");
             dtCateg = dsCateg.Tables["Categorie"];
@@ -358,10 +392,11 @@ namespace Competition
 
                 openBase();
 
-                // Insertion de la nouvelel catégorie.
+                // Insertion de le nouveau membre.
                 string sql = "INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)"
                     + "values ('" + mbr.getNom() + "', '" + mbr.getPrenom() + "', '" + mbr.getSexe()
                     + "', " + mbr.getAge().ToString() + ", " + mbr.getPoids().ToString() + ", DATETIME('NOW'))";
+                logger.Info("insertMembre: requête = " + sql);
 
                 using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
                 {
@@ -375,7 +410,7 @@ namespace Competition
             }
             else
             {
-                updateMembre(membre);
+                updateMembre(mbr);
             }
 
             return true;
@@ -386,10 +421,11 @@ namespace Competition
 
             openBase();
 
-            string sql = "UPDATE categorie SET mem_nom = '" + membre.getNom() + "', mem_prenom = '" + membre.getPrenom()
+            string sql = "UPDATE membre SET mem_nom = '" + membre.getNom() + "', mem_prenom = '" + membre.getPrenom()
                  + ", mem_sexe = '" + membre.getSexe() + "', mem_age = " + membre.getAge().ToString() 
                  + ", mem_poids = " + membre.getPoids().ToString() + ", mem_modification = DATETIME('NOW')"
                 + " WHERE mem_id = " + membre.getId();
+            logger.Info("updateMembre: requête = " + sql);
 
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
             {
@@ -406,6 +442,7 @@ namespace Competition
             openBase();
 
             string sql = "DELETE FROM membre WHERE mem_id = " + membre.getId();
+            logger.Info("deleteMembre: requête = " + sql);
 
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
             {
@@ -422,6 +459,7 @@ namespace Competition
             openBase();
 
             string sql = "DELETE FROM membre WHERE mem_id = " + id;
+            logger.Info("deleteMembre: requête = " + sql);
 
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
             {
@@ -438,6 +476,8 @@ namespace Competition
             openBase();
 
             string sql = "SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = " + id;
+            logger.Info("getMembre: requête = " + sql);
+
             Membre membre = new Membre();
 
             using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
@@ -469,7 +509,11 @@ namespace Competition
 
             DataSet dsMembre = new DataSet();
             DataTable dtMembre = new DataTable();
-            _DB = new SQLiteDataAdapter("SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation FROM membre;", _dbConnection);
+            string sql = "SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation FROM membre;";
+            logger.Info("loadMembres: requête = " + sql);
+
+            _DB = new SQLiteDataAdapter(sql, _dbConnection);
+
             dsMembre.Reset();
             _DB.Fill(dsMembre, "Membre");
             dtMembre = dsMembre.Tables["Membre"];
@@ -482,5 +526,138 @@ namespace Competition
 
         }
 
+
+
+
+        public Boolean insertPoule(Poule p)
+        {
+
+            Poule poule = getPoule(p.getId());
+
+            if (poule.getNom() == null)
+            {
+
+                openBase();
+
+                // Insertion de la nouvelle poule.
+                string sql = "INSERT INTO poule (pou_nom, pou_creation)"
+                    + " values ('" + p.getNom()  + "', DATETIME('NOW'))";
+                logger.Info("insertPoule: requête = " + sql);
+
+                using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
+                {
+                    cmd.ExecuteNonQuery();
+
+                }
+
+
+                closeBase();
+
+            }
+            else
+            {
+                updatePoule(p);
+            }
+
+            return true;
+        }
+
+        public Boolean updatePoule(Poule poule)
+        {
+
+            openBase();
+
+            string sql = "UPDATE poule SET pou_nom = '" + poule.getNom() + "', pou_modification = DATETIME('NOW')"
+                + " WHERE pou_id = " + poule.getId();
+            logger.Info("updatePoule: requête = " + sql);
+
+            using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
+            {
+                cmd.ExecuteNonQuery();
+            }
+            closeBase();
+
+            return true;
+        }
+
+        public Boolean deletePoule(Poule poule)
+        {
+
+            openBase();
+
+            string sql = "DELETE FROM poule WHERE pou_id = " + poule.getId();
+            logger.Info("deletePoule: requête = " + sql);
+
+            using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
+            {
+                cmd.ExecuteNonQuery();
+            }
+            closeBase();
+
+            return true;
+        }
+
+        public Boolean deletePoule(int id)
+        {
+
+            openBase();
+
+            string sql = "DELETE FROM poule WHERE pou_id = " + id;
+            logger.Info("deletePoule: requête = " + sql);
+
+            using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
+            {
+                cmd.ExecuteNonQuery();
+            }
+            closeBase();
+
+            return true;
+        }
+
+        public Poule getPoule(int id)
+        {
+
+            openBase();
+
+            string sql = "SELECT pou_id, pou_nom FROM poule WHERE pou_id = " + id;
+            logger.Info("getPoule: requête = " + sql);
+
+            Poule poule = new Poule();
+
+            using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
+            {
+                using (SQLiteDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        poule = new Poule((int)reader.GetInt16(0), reader.GetString(1));
+                    }
+                }
+            }
+
+
+
+            closeBase();
+
+            return poule;
+        }
+
+        public DataTable loadPoules()
+        {
+
+            DataSet dsPoule = new DataSet();
+            DataTable dtPoule = new DataTable();
+            string sql = "SELECT pou_id, pou_nom, pou_creation, pou_modification FROM poule;";
+            logger.Info("loadPoules: requête = " + sql);
+
+            _DB = new SQLiteDataAdapter(sql, _dbConnection);
+
+            dsPoule.Reset();
+            _DB.Fill(dsPoule, "Poule");
+            dtPoule = dsPoule.Tables["Poule"];
+
+            return dtPoule;
+
+        }
     }
 }

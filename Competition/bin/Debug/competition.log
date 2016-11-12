@@ -1,0 +1,162 @@
+2016-11-12 16:03:45,187 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-12 16:03:48,948 [9] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-12 16:03:48,949 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:03:48,978 [9] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-12 16:03:49,003 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:03:49,003 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:03:49,007 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:03:49,009 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:03:49,010 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:03:49,028 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:04:02,342 [9] INFO  Competition.frm_main - frmCateg.btnOk_Click: Validation du formulaire.
+2016-11-12 16:04:02,343 [9] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-12 16:04:02,343 [9] INFO  Competition.frm_main - frmCateg.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-12 16:04:02,343 [9] INFO  Competition.frm_main - Categorie: Création de l'instance B
+2016-11-12 16:04:02,343 [9] INFO  Competition.frm_main - createCategorie: nom = B
+2016-11-12 16:04:02,343 [9] INFO  Competition.frm_main - createCategorie: age min =3
+2016-11-12 16:04:02,343 [9] INFO  Competition.frm_main - createCategorie: age max = 4
+2016-11-12 16:04:02,343 [9] INFO  Competition.frm_main - createCategorie: poids min = 3
+2016-11-12 16:04:02,343 [9] INFO  Competition.frm_main - createCategorie: poids max = 4
+2016-11-12 16:04:02,344 [9] INFO  Competition.frm_main - createCategorie: sexe = FEMALE
+2016-11-12 16:04:02,344 [9] ERROR Competition.frm_main - Categorie.insert.
+2016-11-12 16:04:02,345 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:04:02,346 [9] INFO  Competition.Dao - getCategorie: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation FROM categorie WHERE cat_id = -1
+2016-11-12 16:04:02,346 [9] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-12 16:04:02,347 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:04:02,347 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:04:02,348 [9] INFO  Competition.Dao - insertCategorie: requête = INSERT INTO categorie (cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation)values ('B', 3, 4, 'F', 3, 4, DATETIME('NOW'))
+2016-11-12 16:04:02,369 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:04:02,372 [9] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-12 16:04:02,372 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:04:02,374 [9] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-12 16:04:02,375 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:04:02,379 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:04:02,381 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:04:02,381 [9] INFO  Competition.frm_main - clearForm: Remise à blanc du formulaire.
+2016-11-12 16:04:18,440 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:04:18,756 [9] INFO  Competition.frm_main - dgvCateg_CellDoubleClick: Sélection d'une ligne.
+2016-11-12 16:04:33,612 [9] INFO  Competition.frm_main - frmCateg.btnOk_Click: Validation du formulaire.
+2016-11-12 16:04:33,612 [9] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-12 16:04:33,612 [9] INFO  Competition.frm_main - frmCateg.btnOk_Click: L'identifiant est connu.
+2016-11-12 16:04:33,613 [9] INFO  Competition.frm_main - Categorie: Création de l'instance 22
+2016-11-12 16:04:33,613 [9] INFO  Competition.frm_main - createCategorie: nom = B
+2016-11-12 16:04:33,613 [9] INFO  Competition.frm_main - createCategorie: age min =3
+2016-11-12 16:04:33,613 [9] INFO  Competition.frm_main - createCategorie: age max = 5
+2016-11-12 16:04:33,613 [9] INFO  Competition.frm_main - createCategorie: poids min = 3
+2016-11-12 16:04:33,613 [9] INFO  Competition.frm_main - createCategorie: poids max = 4
+2016-11-12 16:04:33,613 [9] INFO  Competition.frm_main - createCategorie: sexe = FEMALE
+2016-11-12 16:04:33,613 [9] ERROR Competition.frm_main - Categorie.insert.
+2016-11-12 16:04:33,613 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:04:33,614 [9] INFO  Competition.Dao - getCategorie: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation FROM categorie WHERE cat_id = 22
+2016-11-12 16:04:33,614 [9] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-12 16:04:33,615 [9] INFO  Competition.frm_main - Categorie: Création de l'instance 22
+2016-11-12 16:04:33,615 [9] INFO  Competition.frm_main - createCategorie: nom = B
+2016-11-12 16:04:33,615 [9] INFO  Competition.frm_main - createCategorie: age min =3
+2016-11-12 16:04:33,615 [9] INFO  Competition.frm_main - createCategorie: age max = 4
+2016-11-12 16:04:33,616 [9] INFO  Competition.frm_main - createCategorie: poids min = 3
+2016-11-12 16:04:33,616 [9] INFO  Competition.frm_main - createCategorie: poids max = 4
+2016-11-12 16:04:33,616 [9] INFO  Competition.frm_main - createCategorie: sexe = FEMALE
+2016-11-12 16:04:33,616 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:04:33,616 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:04:33,617 [9] INFO  Competition.Dao - updateCategorie: requête = UPDATE categorie SET cat_nom = 'B', cat_agemin = 3, cat_agemax = 5, cat_sexe = 'F', cat_poidsmin = 3, cat_poidsmax = 4, cat_modification = DATETIME('NOW') WHERE cat_id = 22
+2016-11-12 16:04:33,635 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:04:33,639 [9] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-12 16:04:33,639 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:04:33,641 [9] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-12 16:04:33,641 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:04:33,642 [9] INFO  Competition.frm_main - dgvCateg_RowsRemoved: Suppression d'une ligne.
+2016-11-12 16:04:33,642 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-12 16:04:33,642 [9] INFO  Competition.Dao - deleteCategorie: requête = DELETE FROM categorie WHERE cat_id = 22
+2016-11-12 16:04:33,649 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:04:33,655 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:04:33,657 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-12 16:04:33,657 [9] INFO  Competition.frm_main - clearForm: Remise à blanc du formulaire.
+2016-11-12 16:06:39,443 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-12 16:06:41,643 [10] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-12 16:06:41,643 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:06:41,674 [10] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-12 16:06:41,699 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:06:41,700 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:06:41,704 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:06:41,706 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:06:41,706 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:06:41,710 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:06:54,900 [10] INFO  Competition.frm_main - frmCateg.btnOk_Click: Validation du formulaire.
+2016-11-12 16:06:54,900 [10] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-12 16:06:54,900 [10] INFO  Competition.frm_main - frmCateg.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-12 16:06:54,900 [10] INFO  Competition.frm_main - Categorie: Création de l'instance B
+2016-11-12 16:06:54,901 [10] INFO  Competition.frm_main - createCategorie: nom = B
+2016-11-12 16:06:54,901 [10] INFO  Competition.frm_main - createCategorie: age min =2
+2016-11-12 16:06:54,901 [10] INFO  Competition.frm_main - createCategorie: age max = 4
+2016-11-12 16:06:54,901 [10] INFO  Competition.frm_main - createCategorie: poids min = 2
+2016-11-12 16:06:54,901 [10] INFO  Competition.frm_main - createCategorie: poids max = 4
+2016-11-12 16:06:54,901 [10] INFO  Competition.frm_main - createCategorie: sexe = FEMALE
+2016-11-12 16:06:54,901 [10] ERROR Competition.frm_main - Categorie.insert.
+2016-11-12 16:06:54,902 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:06:54,903 [10] INFO  Competition.Dao - getCategorie: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation FROM categorie WHERE cat_id = -1
+2016-11-12 16:06:54,903 [10] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-12 16:06:54,904 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:06:54,904 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:06:54,906 [10] INFO  Competition.Dao - insertCategorie: requête = INSERT INTO categorie (cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation)values ('B', 2, 4, 'F', 2, 4, DATETIME('NOW'))
+2016-11-12 16:06:54,925 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:06:54,930 [10] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-12 16:06:54,930 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:06:54,931 [10] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-12 16:06:54,932 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:06:54,937 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:06:54,938 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:06:54,939 [10] INFO  Competition.frm_main - clearForm: Remise à blanc du formulaire.
+2016-11-12 16:06:57,382 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:06:57,706 [10] INFO  Competition.frm_main - dgvCateg_CellDoubleClick: Sélection d'une ligne.
+2016-11-12 16:07:00,747 [10] INFO  Competition.frm_main - frmCateg.btnOk_Click: Validation du formulaire.
+2016-11-12 16:07:00,747 [10] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-12 16:07:00,747 [10] INFO  Competition.frm_main - frmCateg.btnOk_Click: L'identifiant est connu.
+2016-11-12 16:07:00,748 [10] INFO  Competition.frm_main - Categorie: Création de l'instance 23
+2016-11-12 16:07:00,748 [10] INFO  Competition.frm_main - createCategorie: nom = B
+2016-11-12 16:07:00,748 [10] INFO  Competition.frm_main - createCategorie: age min =2
+2016-11-12 16:07:00,748 [10] INFO  Competition.frm_main - createCategorie: age max = 5
+2016-11-12 16:07:00,748 [10] INFO  Competition.frm_main - createCategorie: poids min = 2
+2016-11-12 16:07:00,748 [10] INFO  Competition.frm_main - createCategorie: poids max = 4
+2016-11-12 16:07:00,748 [10] INFO  Competition.frm_main - createCategorie: sexe = FEMALE
+2016-11-12 16:07:00,748 [10] ERROR Competition.frm_main - Categorie.insert.
+2016-11-12 16:07:00,748 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:07:00,749 [10] INFO  Competition.Dao - getCategorie: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation FROM categorie WHERE cat_id = 23
+2016-11-12 16:07:00,749 [10] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-12 16:07:00,751 [10] INFO  Competition.frm_main - Categorie: Création de l'instance 23
+2016-11-12 16:07:00,751 [10] INFO  Competition.frm_main - createCategorie: nom = B
+2016-11-12 16:07:00,751 [10] INFO  Competition.frm_main - createCategorie: age min =2
+2016-11-12 16:07:00,751 [10] INFO  Competition.frm_main - createCategorie: age max = 4
+2016-11-12 16:07:00,751 [10] INFO  Competition.frm_main - createCategorie: poids min = 2
+2016-11-12 16:07:00,751 [10] INFO  Competition.frm_main - createCategorie: poids max = 4
+2016-11-12 16:07:00,751 [10] INFO  Competition.frm_main - createCategorie: sexe = FEMALE
+2016-11-12 16:07:00,751 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:07:00,752 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:07:00,754 [10] INFO  Competition.Dao - updateCategorie: requête = UPDATE categorie SET cat_nom = 'B', cat_agemin = 2, cat_agemax = 5, cat_sexe = 'F', cat_poidsmin = 2, cat_poidsmax = 4, cat_modification = DATETIME('NOW') WHERE cat_id = 23
+2016-11-12 16:07:00,771 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:07:00,776 [10] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-12 16:07:00,776 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:07:00,778 [10] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-12 16:07:00,778 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:07:00,784 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:07:00,786 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:07:00,786 [10] INFO  Competition.frm_main - clearForm: Remise à blanc du formulaire.
+2016-11-12 16:07:26,658 [10] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-12 16:07:26,658 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:07:26,659 [10] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-12 16:07:26,664 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:07:26,667 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:07:26,667 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:07:26,670 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:07:33,459 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:07:34,575 [10] INFO  Competition.frm_main - dgvCateg_RowsRemoved: Suppression d'une ligne.
+2016-11-12 16:07:34,576 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:07:34,578 [10] INFO  Competition.Dao - deleteCategorie: requête = DELETE FROM categorie WHERE cat_id = 23
+2016-11-12 16:07:34,601 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:07:34,610 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:07:39,163 [10] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-12 16:07:39,163 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-12 16:07:39,164 [10] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-12 16:07:39,169 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:07:39,171 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-12 16:07:39,171 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-12 16:07:39,174 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.

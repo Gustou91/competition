@@ -39,6 +39,7 @@
             this.gérerLesCatégoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.résultatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableauDeBordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gérerLesPoulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,27 +83,28 @@
             // gérerLesCompétitionsToolStripMenuItem
             // 
             this.gérerLesCompétitionsToolStripMenuItem.Name = "gérerLesCompétitionsToolStripMenuItem";
-            this.gérerLesCompétitionsToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.gérerLesCompétitionsToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.gérerLesCompétitionsToolStripMenuItem.Text = "Nouvelle compétition";
             this.gérerLesCompétitionsToolStripMenuItem.Click += new System.EventHandler(this.gérerLesCompétitionsToolStripMenuItem_Click);
             // 
             // inscriptionToolStripMenuItem
             // 
             this.inscriptionToolStripMenuItem.Name = "inscriptionToolStripMenuItem";
-            this.inscriptionToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.inscriptionToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.inscriptionToolStripMenuItem.Text = "Inscription";
             this.inscriptionToolStripMenuItem.Click += new System.EventHandler(this.inscriptionToolStripMenuItem_Click);
             // 
             // créerLesPoulesToolStripMenuItem
             // 
             this.créerLesPoulesToolStripMenuItem.Name = "créerLesPoulesToolStripMenuItem";
-            this.créerLesPoulesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.créerLesPoulesToolStripMenuItem.Text = "Créer les poules";
+            this.créerLesPoulesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.créerLesPoulesToolStripMenuItem.Text = "Répartir dans les poules";
             // 
             // gérerToolStripMenuItem
             // 
             this.gérerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gérerLesCatégoriesToolStripMenuItem});
+            this.gérerLesCatégoriesToolStripMenuItem,
+            this.gérerLesPoulesToolStripMenuItem});
             this.gérerToolStripMenuItem.Name = "gérerToolStripMenuItem";
             this.gérerToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.gérerToolStripMenuItem.Text = "Gérer";
@@ -127,6 +129,13 @@
             this.tableauDeBordToolStripMenuItem.Name = "tableauDeBordToolStripMenuItem";
             this.tableauDeBordToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.tableauDeBordToolStripMenuItem.Text = "Tableau de bord";
+            // 
+            // gérerLesPoulesToolStripMenuItem
+            // 
+            this.gérerLesPoulesToolStripMenuItem.Name = "gérerLesPoulesToolStripMenuItem";
+            this.gérerLesPoulesToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.gérerLesPoulesToolStripMenuItem.Text = "Gérer les poules";
+            this.gérerLesPoulesToolStripMenuItem.Click += new System.EventHandler(this.gérerLesPoulesToolStripMenuItem_Click);
             // 
             // frm_main
             // 
@@ -159,6 +168,7 @@
         private System.Windows.Forms.ToolStripMenuItem tableauDeBordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gérerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gérerLesCatégoriesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gérerLesPoulesToolStripMenuItem;
     }
 }
 

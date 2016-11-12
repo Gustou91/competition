@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\log4net-1.2.13\bin\net-cp\4.0\release\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite, Version=1.0.103.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
@@ -52,6 +55,12 @@
   <ItemGroup>
     <Compile Include="Categorie.cs" />
     <Compile Include="Competition.cs" />
+    <Compile Include="frmPoule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPoule.Designer.cs">
+      <DependentUpon>frmPoule.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMembre.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,9 +86,14 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logger.cs" />
     <Compile Include="Membre.cs" />
+    <Compile Include="Poule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmPoule.resx">
+      <DependentUpon>frmPoule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMembre.resx">
       <DependentUpon>frmMembre.cs</DependentUpon>
     </EmbeddedResource>
