@@ -15,6 +15,7 @@ namespace Competition
         private int _age;
         private int _poids;
         private DateTime _creation;
+        private DateTime _modif;
 
         private Boolean _init = false;
         private Dao dao = Dao.Instance;

@@ -60,7 +60,7 @@ namespace Competition
         public void insert()
         {
             if (_init)
-                dao.insertPoule(this);
+                _id = dao.insertPoule(this);
         }
 
         public void update()

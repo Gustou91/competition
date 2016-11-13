@@ -160,3 +160,1600 @@
 2016-11-12 16:07:39,171 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
 2016-11-12 16:07:39,171 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
 2016-11-12 16:07:39,174 [10] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 11:54:30,224 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 11:54:39,247 [9] INFO  Competition.frm_main - loadListPoule: Chargement de la liste des poules.
+2016-11-13 11:54:39,248 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 11:54:39,300 [9] INFO  Competition.Dao - loadPoules: requête = SELECT pou_id, pou_nom, pou_creation, pou_modification FROM poule;
+2016-11-13 11:54:39,341 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 11:54:44,145 [9] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-13 11:54:44,145 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 11:54:44,146 [9] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-13 11:54:44,157 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 11:54:44,159 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 11:54:44,159 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 11:54:44,164 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 11:54:50,621 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 11:54:50,849 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 11:54:51,020 [9] INFO  Competition.frm_main - dgvCateg_CellDoubleClick: Sélection d'une ligne.
+2016-11-13 11:54:51,883 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 11:54:52,207 [9] INFO  Competition.frm_main - dgvCateg_CellDoubleClick: Sélection d'une ligne.
+2016-11-13 11:56:04,070 [9] INFO  Competition.frm_main - frmCateg.btnOk_Click: Validation du formulaire.
+2016-11-13 11:56:04,070 [9] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-13 11:56:04,070 [9] INFO  Competition.frm_main - frmCateg.btnOk_Click: L'identifiant est connu.
+2016-11-13 11:56:04,071 [9] INFO  Competition.frm_main - Categorie: Création de l'instance 21
+2016-11-13 11:56:04,071 [9] INFO  Competition.frm_main - createCategorie: nom = 2004 Fille 27-28kg
+2016-11-13 11:56:04,071 [9] INFO  Competition.frm_main - createCategorie: age min =12
+2016-11-13 11:56:04,071 [9] INFO  Competition.frm_main - createCategorie: age max = 12
+2016-11-13 11:56:04,071 [9] INFO  Competition.frm_main - createCategorie: poids min = 27
+2016-11-13 11:56:04,071 [9] INFO  Competition.frm_main - createCategorie: poids max = 28
+2016-11-13 11:56:04,071 [9] INFO  Competition.frm_main - createCategorie: sexe = FEMALE
+2016-11-13 11:56:04,071 [9] INFO  Competition.frm_main - Categorie.insert.
+2016-11-13 11:56:04,072 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 11:56:04,074 [9] INFO  Competition.Dao - getCategorie: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation FROM categorie WHERE cat_id = 21
+2016-11-13 11:56:04,074 [9] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-13 11:56:04,075 [9] INFO  Competition.frm_main - Categorie: Création de l'instance 21
+2016-11-13 11:56:04,075 [9] INFO  Competition.frm_main - createCategorie: nom = A
+2016-11-13 11:56:04,075 [9] INFO  Competition.frm_main - createCategorie: age min =2
+2016-11-13 11:56:04,075 [9] INFO  Competition.frm_main - createCategorie: age max = 3
+2016-11-13 11:56:04,075 [9] INFO  Competition.frm_main - createCategorie: poids min = 2
+2016-11-13 11:56:04,075 [9] INFO  Competition.frm_main - createCategorie: poids max = 3
+2016-11-13 11:56:04,075 [9] INFO  Competition.frm_main - createCategorie: sexe = MALE
+2016-11-13 11:56:04,075 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 11:56:04,076 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 11:56:04,077 [9] INFO  Competition.Dao - updateCategorie: requête = UPDATE categorie SET cat_nom = '2004 Fille 27-28kg', cat_agemin = 12, cat_agemax = 12, cat_sexe = 'F', cat_poidsmin = 27, cat_poidsmax = 28, cat_modification = DATETIME('NOW') WHERE cat_id = 21
+2016-11-13 11:56:04,090 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 11:56:04,094 [9] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-13 11:56:04,094 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 11:56:04,096 [9] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-13 11:56:04,097 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 11:56:04,103 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 11:56:04,104 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 11:56:04,105 [9] INFO  Competition.frm_main - clearForm: Remise à blanc du formulaire.
+2016-11-13 11:57:20,234 [9] INFO  Competition.frm_main - frmCateg.btnOk_Click: Validation du formulaire.
+2016-11-13 11:57:20,234 [9] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-13 11:57:20,234 [9] INFO  Competition.frm_main - frmCateg.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 11:57:20,235 [9] INFO  Competition.frm_main - Categorie: Création de l'instance 2005 Garçon 35-38kg
+2016-11-13 11:57:20,235 [9] INFO  Competition.frm_main - createCategorie: nom = 2005 Garçon 35-38kg
+2016-11-13 11:57:20,235 [9] INFO  Competition.frm_main - createCategorie: age min =11
+2016-11-13 11:57:20,235 [9] INFO  Competition.frm_main - createCategorie: age max = 11
+2016-11-13 11:57:20,235 [9] INFO  Competition.frm_main - createCategorie: poids min = 35
+2016-11-13 11:57:20,235 [9] INFO  Competition.frm_main - createCategorie: poids max = 38
+2016-11-13 11:57:20,235 [9] INFO  Competition.frm_main - createCategorie: sexe = MALE
+2016-11-13 11:57:20,235 [9] INFO  Competition.frm_main - Categorie.insert.
+2016-11-13 11:57:20,235 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 11:57:20,236 [9] INFO  Competition.Dao - getCategorie: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation FROM categorie WHERE cat_id = -1
+2016-11-13 11:57:20,236 [9] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-13 11:57:20,236 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 11:57:20,237 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 11:57:20,237 [9] INFO  Competition.Dao - insertCategorie: requête = INSERT INTO categorie (cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation)values ('2005 Garçon 35-38kg', 11, 11, 'M', 35, 38, DATETIME('NOW'))
+2016-11-13 11:57:20,244 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 11:57:20,249 [9] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-13 11:57:20,249 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 11:57:20,251 [9] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-13 11:57:20,251 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 11:57:20,258 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 11:57:20,260 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 11:57:20,260 [9] INFO  Competition.frm_main - clearForm: Remise à blanc du formulaire.
+2016-11-13 12:05:31,575 [9] INFO  Competition.frm_main - frmCateg.btnOk_Click: Validation du formulaire.
+2016-11-13 12:05:31,575 [9] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-13 12:05:31,575 [9] INFO  Competition.frm_main - frmCateg.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:05:31,575 [9] INFO  Competition.frm_main - Categorie: Création de l'instance 2006 Fille 23-25Kg
+2016-11-13 12:05:31,575 [9] INFO  Competition.frm_main - createCategorie: nom = 2006 Fille 23-25Kg
+2016-11-13 12:05:31,575 [9] INFO  Competition.frm_main - createCategorie: age min =10
+2016-11-13 12:05:31,575 [9] INFO  Competition.frm_main - createCategorie: age max = 10
+2016-11-13 12:05:31,575 [9] INFO  Competition.frm_main - createCategorie: poids min = 23
+2016-11-13 12:05:31,575 [9] INFO  Competition.frm_main - createCategorie: poids max = 25
+2016-11-13 12:05:31,575 [9] INFO  Competition.frm_main - createCategorie: sexe = FEMALE
+2016-11-13 12:05:31,575 [9] INFO  Competition.frm_main - Categorie.insert.
+2016-11-13 12:05:31,575 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:05:31,576 [9] INFO  Competition.Dao - getCategorie: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation FROM categorie WHERE cat_id = -1
+2016-11-13 12:05:31,576 [9] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-13 12:05:31,577 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:05:31,577 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:05:31,578 [9] INFO  Competition.Dao - insertCategorie: requête = INSERT INTO categorie (cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation)values ('2006 Fille 23-25Kg', 10, 10, 'F', 23, 25, DATETIME('NOW'))
+2016-11-13 12:05:31,584 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:05:31,589 [9] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-13 12:05:31,589 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:05:31,591 [9] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-13 12:05:31,592 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 12:05:31,599 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 12:05:31,601 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:05:31,601 [9] INFO  Competition.frm_main - clearForm: Remise à blanc du formulaire.
+2016-11-13 12:06:42,056 [9] INFO  Competition.frm_main - frmCateg.btnOk_Click: Validation du formulaire.
+2016-11-13 12:06:42,056 [9] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-13 12:06:42,056 [9] INFO  Competition.frm_main - frmCateg.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:06:42,056 [9] INFO  Competition.frm_main - Categorie: Création de l'instance 2006 Garçon 24-25Kg
+2016-11-13 12:06:42,056 [9] INFO  Competition.frm_main - createCategorie: nom = 2006 Garçon 24-25Kg
+2016-11-13 12:06:42,056 [9] INFO  Competition.frm_main - createCategorie: age min =10
+2016-11-13 12:06:42,056 [9] INFO  Competition.frm_main - createCategorie: age max = 10
+2016-11-13 12:06:42,056 [9] INFO  Competition.frm_main - createCategorie: poids min = 24
+2016-11-13 12:06:42,057 [9] INFO  Competition.frm_main - createCategorie: poids max = 25
+2016-11-13 12:06:42,057 [9] INFO  Competition.frm_main - createCategorie: sexe = MALE
+2016-11-13 12:06:42,057 [9] INFO  Competition.frm_main - Categorie.insert.
+2016-11-13 12:06:42,057 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:06:42,058 [9] INFO  Competition.Dao - getCategorie: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation FROM categorie WHERE cat_id = -1
+2016-11-13 12:06:42,058 [9] INFO  Competition.frm_main - Categorie: Création d'une instance.
+2016-11-13 12:06:42,059 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:06:42,059 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:06:42,061 [9] INFO  Competition.Dao - insertCategorie: requête = INSERT INTO categorie (cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax, cat_creation)values ('2006 Garçon 24-25Kg', 10, 10, 'M', 24, 25, DATETIME('NOW'))
+2016-11-13 12:06:42,067 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:06:42,074 [9] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-13 12:06:42,074 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:06:42,075 [9] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-13 12:06:42,076 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 12:06:42,081 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 12:06:42,085 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:06:42,085 [9] INFO  Competition.frm_main - clearForm: Remise à blanc du formulaire.
+2016-11-13 12:12:26,644 [9] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-13 12:12:26,644 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:12:26,645 [9] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-13 12:12:26,650 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 12:12:26,653 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:12:26,653 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 12:12:26,657 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 12:12:31,763 [9] INFO  Competition.frm_main - loadListPoule: Chargement de la liste des poules.
+2016-11-13 12:12:31,763 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:12:31,764 [9] INFO  Competition.Dao - loadPoules: requête = SELECT pou_id, pou_nom, pou_creation, pou_modification FROM poule;
+2016-11-13 12:12:31,769 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:19:33,286 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 12:19:39,071 [9] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:19:39,071 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:19:39,099 [9] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation FROM membre;
+2016-11-13 12:19:39,140 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:19:39,140 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:19:39,141 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:19:39,144 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:19:39,147 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:19:39,148 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:19:39,148 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:19:39,151 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:20:27,163 [9] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:20:27,163 [9] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:20:27,164 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:20:27,165 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 0
+2016-11-13 12:20:27,166 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:20:27,166 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:20:27,168 [9] INFO  Competition.Dao - insertMembre: requête = INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)values ('Abimane', 'Hugues', 'M', 100, 23, DATETIME('NOW'))
+2016-11-13 12:20:27,187 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:20:27,191 [9] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:20:27,191 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:20:27,193 [9] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation FROM membre;
+2016-11-13 12:20:27,193 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:20:27,194 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:20:27,199 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:20:27,201 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:20:31,755 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:21:35,108 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 12:26:28,512 [9] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:26:28,512 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:26:28,542 [9] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation FROM membre;
+2016-11-13 12:26:28,570 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:26:28,571 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:26:28,571 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:26:28,575 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:26:28,592 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:26:28,593 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:26:28,593 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:26:28,597 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:27:19,421 [9] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:27:19,421 [9] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:27:19,422 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:27:19,423 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 0
+2016-11-13 12:27:19,424 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:27:19,424 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:27:19,426 [9] INFO  Competition.Dao - insertMembre: requête = INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)values ('Acher', 'Océane', 'F', 10, 24, DATETIME('NOW'))
+2016-11-13 12:27:19,444 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:27:19,449 [9] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:27:19,449 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:27:19,450 [9] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation FROM membre;
+2016-11-13 12:27:19,451 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:27:19,452 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:27:19,456 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:27:19,459 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:27:19,459 [9] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:27:24,530 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:27:25,776 [9] INFO  Competition.frm_main - dgvMembre_CellDoubleClick: Sélection d'une ligne.
+2016-11-13 12:27:31,532 [9] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:27:31,533 [9] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant est connu.
+2016-11-13 12:27:31,533 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:27:31,534 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 3
+2016-11-13 12:27:31,535 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:27:31,536 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:27:31,537 [9] INFO  Competition.Dao - updateMembre: requête = UPDATE membre SET mem_nom = 'Garcin', mem_prenom = 'Clarisse, mem_sexe = 'F', mem_age = 3, mem_poids = 22, mem_modification = DATETIME('NOW') WHERE mem_id = 3
+2016-11-13 12:28:25,035 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 12:28:29,203 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:28:29,203 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:28:29,233 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation FROM membre;
+2016-11-13 12:28:29,261 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:28:29,261 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:28:29,261 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:28:29,265 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:28:29,269 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:28:29,269 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:28:29,269 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:28:29,273 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:28:31,123 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:28:31,515 [10] INFO  Competition.frm_main - dgvMembre_CellDoubleClick: Sélection d'une ligne.
+2016-11-13 12:28:38,413 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:28:38,413 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant est connu.
+2016-11-13 12:28:38,414 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:28:38,415 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 3
+2016-11-13 12:28:38,417 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:28:38,418 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:28:38,419 [10] INFO  Competition.Dao - updateMembre: requête = UPDATE membre SET mem_nom = 'Garcin', mem_prenom = 'Clarisse', mem_sexe = 'F', mem_age = 3, mem_poids = 22, mem_modification = DATETIME('NOW') WHERE mem_id = 3
+2016-11-13 12:29:59,663 [10] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 12:29:59,663 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 3
+2016-11-13 12:29:59,663 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:29:59,664 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:29:59,666 [10] INFO  Competition.Dao - updateMembre: requête = UPDATE membre SET mem_nom = 'Garcin', mem_prenom = 'Clarisse', mem_sexe = 'F', mem_age = 3, mem_poids = 22, mem_modification = DATETIME('NOW') WHERE mem_id = 3
+2016-11-13 12:30:01,419 [10] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 12:30:01,419 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 3
+2016-11-13 12:30:01,419 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:30:01,419 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:30:01,421 [10] INFO  Competition.Dao - updateMembre: requête = UPDATE membre SET mem_nom = 'Garcin', mem_prenom = 'Clarisse', mem_sexe = 'F', mem_age = 3, mem_poids = 22, mem_modification = DATETIME('NOW') WHERE mem_id = 3
+2016-11-13 12:30:08,762 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 12:30:10,889 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:30:10,890 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:30:10,918 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation FROM membre;
+2016-11-13 12:30:10,945 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:30:10,945 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:30:10,946 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:30:10,950 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:30:10,953 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:30:10,954 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:30:10,954 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:30:10,960 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:30:12,786 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:30:13,208 [10] INFO  Competition.frm_main - dgvMembre_CellDoubleClick: Sélection d'une ligne.
+2016-11-13 12:30:52,313 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:30:52,313 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant est connu.
+2016-11-13 12:30:52,314 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:30:52,315 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 3
+2016-11-13 12:30:52,317 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:30:52,318 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:30:52,319 [10] INFO  Competition.Dao - updateMembre: requête = UPDATE membre SET mem_nom = 'Garcin', mem_prenom = 'Clarisse', mem_sexe = 'F', mem_age = 3, mem_poids = 22, mem_modification = DATETIME('NOW') WHERE mem_id = 3
+2016-11-13 12:34:41,066 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 12:34:43,441 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:34:43,441 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:34:43,468 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation FROM membre;
+2016-11-13 12:34:43,495 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:34:43,496 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:34:43,496 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:34:43,500 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:34:43,504 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:34:43,504 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:34:43,504 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:34:43,508 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:34:45,213 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:34:47,446 [10] INFO  Competition.frm_main - dgvMembre_CellDoubleClick: Sélection d'une ligne.
+2016-11-13 12:34:51,886 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:34:51,886 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant est connu.
+2016-11-13 12:34:51,887 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:34:51,889 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 3
+2016-11-13 12:34:51,890 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:34:51,891 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:34:51,892 [10] INFO  Competition.Dao - updateMembre: requête = UPDATE membre SET mem_nom = 'Garcin', mem_prenom = 'Clarisse', mem_sexe = 'F', mem_age = 3, mem_poids = 22, mem_modification = DATETIME('NOW') WHERE mem_id = 3
+2016-11-13 12:34:51,900 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:34:51,903 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:34:51,903 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:34:51,904 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation FROM membre;
+2016-11-13 12:34:51,905 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:34:51,906 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:34:51,910 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:34:51,912 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:34:51,913 [10] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:34:53,201 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:34:53,493 [10] INFO  Competition.frm_main - dgvMembre_CellDoubleClick: Sélection d'une ligne.
+2016-11-13 12:34:58,063 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:34:58,063 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant est connu.
+2016-11-13 12:34:58,063 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:34:58,064 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 2
+2016-11-13 12:34:58,064 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:34:58,064 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:34:58,066 [10] INFO  Competition.Dao - updateMembre: requête = UPDATE membre SET mem_nom = 'Garcin', mem_prenom = 'HM', mem_sexe = 'M', mem_age = 8, mem_poids = 32, mem_modification = DATETIME('NOW') WHERE mem_id = 2
+2016-11-13 12:34:58,084 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:34:58,088 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:34:58,088 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:34:58,090 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation FROM membre;
+2016-11-13 12:34:58,091 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:34:58,092 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:34:58,096 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:34:58,099 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:34:58,099 [10] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:38:12,292 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 12:38:14,503 [9] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:38:14,503 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:38:14,533 [9] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:38:14,561 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:38:14,561 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:38:14,562 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:38:14,566 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:38:14,570 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:38:14,570 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:38:14,571 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:38:14,577 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:38:49,682 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 12:38:52,050 [9] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:38:52,051 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:38:52,079 [9] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:38:52,107 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:38:52,107 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:38:52,107 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:38:52,114 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:38:52,119 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:38:52,119 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:38:52,119 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:38:52,124 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:39:05,354 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 12:39:21,799 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:39:21,799 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:39:21,831 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:39:21,863 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:39:21,864 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:39:21,864 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:39:21,870 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:39:21,874 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:39:21,875 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:39:21,875 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:39:21,884 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:41:04,985 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:41:04,985 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:41:04,986 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:41:04,988 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 0
+2016-11-13 12:41:04,988 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:41:04,989 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:41:04,990 [10] INFO  Competition.Dao - insertMembre: requête = INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)values ('Afonso', 'Manon', 'F', 12, 27, DATETIME('NOW'))
+2016-11-13 12:41:04,998 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:41:05,001 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:41:05,001 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:41:05,002 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:41:05,003 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:41:05,004 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:41:05,009 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:41:05,013 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:41:05,013 [10] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:41:47,782 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:41:47,782 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:41:47,782 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:41:47,783 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 0
+2016-11-13 12:41:47,784 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:41:47,784 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:41:47,785 [10] INFO  Competition.Dao - insertMembre: requête = INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)values ('Afonso', 'Ilan', 'M', 6, 19, DATETIME('NOW'))
+2016-11-13 12:41:47,802 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:41:47,807 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:41:47,807 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:41:47,809 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:41:47,810 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:41:47,811 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:41:47,817 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:41:47,820 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:41:47,820 [10] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:42:38,003 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:42:38,003 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:42:38,003 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:42:38,004 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 0
+2016-11-13 12:42:38,005 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:42:38,005 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:42:38,006 [10] INFO  Competition.Dao - insertMembre: requête = INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)values ('Alphonsout', 'Maely', 'F', 10, 24, DATETIME('NOW'))
+2016-11-13 12:42:38,012 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:42:38,017 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:42:38,017 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:42:38,018 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:42:38,019 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:42:38,020 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:42:38,026 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:42:38,030 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:42:38,030 [10] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:43:14,071 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:43:14,071 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:43:14,071 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:43:14,072 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 0
+2016-11-13 12:43:14,072 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:43:14,073 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:43:14,073 [10] INFO  Competition.Dao - insertMembre: requête = INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)values ('Ambrosi', 'Enzo', 'M', 10, 25, DATETIME('NOW'))
+2016-11-13 12:43:14,091 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:43:14,095 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:43:14,095 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:43:14,097 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:43:14,098 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:43:14,099 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:43:14,105 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:43:14,109 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:43:14,109 [10] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:43:51,442 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:43:51,442 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:43:51,442 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:43:51,444 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 0
+2016-11-13 12:43:51,444 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:43:51,444 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:43:51,445 [10] INFO  Competition.Dao - insertMembre: requête = INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)values ('Amistani', 'Leandro', 'M', 10, 21, DATETIME('NOW'))
+2016-11-13 12:43:51,462 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:43:51,466 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:43:51,466 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:43:51,468 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:43:51,469 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:43:51,470 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:43:51,475 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:43:51,480 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:43:51,480 [10] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:44:24,695 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:44:24,695 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:44:24,695 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:44:24,697 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 0
+2016-11-13 12:44:24,697 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:44:24,697 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:44:24,698 [10] INFO  Competition.Dao - insertMembre: requête = INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)values ('Anne', 'Mathys', 'M', 11, 22, DATETIME('NOW'))
+2016-11-13 12:44:24,716 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:44:24,721 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:44:24,721 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:44:24,722 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:44:24,723 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:44:24,725 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:44:24,732 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:44:24,738 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:44:24,738 [10] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:45:17,843 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:45:17,843 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:45:17,843 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:45:17,844 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 0
+2016-11-13 12:45:17,845 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:45:17,845 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:45:17,846 [10] INFO  Competition.Dao - insertMembre: requête = INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)values ('Assogba', 'Maelys', 'M', 11, 22, DATETIME('NOW'))
+2016-11-13 12:45:17,863 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:45:17,868 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:45:17,868 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:45:17,869 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:45:17,870 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:45:17,872 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:45:17,879 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:45:17,884 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:45:17,884 [10] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:46:11,334 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:46:11,334 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:46:11,334 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:46:11,335 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 0
+2016-11-13 12:46:11,336 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:46:11,336 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:46:11,337 [10] INFO  Competition.Dao - insertMembre: requête = INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)values ('Aviez', 'Cédric', 'M', 9, 35, DATETIME('NOW'))
+2016-11-13 12:46:11,355 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:46:11,359 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:46:11,359 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:46:11,360 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:46:11,361 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:46:11,362 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:46:11,368 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:46:11,375 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:46:11,375 [10] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:46:51,800 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:46:51,800 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:46:51,800 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:46:51,801 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 0
+2016-11-13 12:46:51,802 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:46:51,802 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:46:51,803 [10] INFO  Competition.Dao - insertMembre: requête = INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)values ('Bachelet', 'Loup', 'F', 12, 28, DATETIME('NOW'))
+2016-11-13 12:46:51,824 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:46:51,828 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:46:51,828 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:46:51,830 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:46:51,831 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:46:51,835 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:46:51,841 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:46:51,852 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:46:51,852 [10] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:46:57,106 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:46:57,421 [10] INFO  Competition.frm_main - dgvMembre_CellDoubleClick: Sélection d'une ligne.
+2016-11-13 12:47:01,079 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:47:01,080 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant est connu.
+2016-11-13 12:47:01,080 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:47:01,081 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 13
+2016-11-13 12:47:01,082 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:47:01,083 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:47:01,084 [10] INFO  Competition.Dao - updateMembre: requête = UPDATE membre SET mem_nom = 'Aviez', mem_prenom = 'Cédric', mem_sexe = 'M', mem_age = 11, mem_poids = 35, mem_modification = DATETIME('NOW') WHERE mem_id = 13
+2016-11-13 12:47:01,090 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:47:01,095 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:47:01,095 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:47:01,096 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:47:01,097 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:47:01,100 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:47:01,106 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:47:01,113 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:47:01,113 [10] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:47:41,059 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 12:47:41,059 [10] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant n'est pas connu.
+2016-11-13 12:47:41,059 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:47:41,063 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 0
+2016-11-13 12:47:41,064 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:47:41,064 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:47:41,065 [10] INFO  Competition.Dao - insertMembre: requête = INSERT INTO membre (mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation)values ('Badou', 'Evan', 'M', 11, 38, DATETIME('NOW'))
+2016-11-13 12:47:41,083 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:47:41,088 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 12:47:41,088 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:47:41,090 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 12:47:41,090 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:47:41,093 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 12:47:41,099 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 12:47:41,110 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 12:47:41,110 [10] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 12:52:33,062 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 12:52:34,965 [9] INFO  Competition.frm_main - loadListPoule: Chargement de la liste des poules.
+2016-11-13 12:52:34,966 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 12:52:34,996 [9] INFO  Competition.Dao - loadPoules: requête = SELECT pou_id, pou_nom, pou_creation, pou_modification FROM poule;
+2016-11-13 12:52:35,021 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 13:05:27,977 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 13:05:30,784 [9] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 13:05:30,785 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 13:05:30,816 [9] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 13:05:30,844 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 13:05:30,846 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 13:05:30,846 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 13:05:30,851 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 13:05:30,861 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 13:05:30,862 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 13:05:30,863 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 13:05:30,867 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 13:05:32,888 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 13:05:34,295 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 13:05:34,635 [9] INFO  Competition.frm_main - dgvMembre_CellDoubleClick: Sélection d'une ligne.
+2016-11-13 13:05:38,333 [9] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 13:05:38,333 [9] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant est connu.
+2016-11-13 13:05:38,335 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 13:05:38,336 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 4
+2016-11-13 13:05:38,338 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 13:05:38,338 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 13:05:38,340 [9] INFO  Competition.Dao - updateMembre: requête = UPDATE membre SET mem_nom = 'Abimane', mem_prenom = 'Hugues', mem_sexe = 'M', mem_age = 10, mem_poids = 23, mem_modification = DATETIME('NOW') WHERE mem_id = 4
+2016-11-13 13:05:38,360 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 13:05:38,364 [9] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 13:05:38,364 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 13:05:38,366 [9] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre;
+2016-11-13 13:05:38,367 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 13:05:38,369 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 13:05:38,375 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 13:05:38,386 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 13:05:38,386 [9] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 13:24:17,300 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 13:24:19,787 [9] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 13:24:19,788 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 13:24:19,817 [9] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre order by mem_sexe, mem_age, mem_poids;
+2016-11-13 13:24:19,846 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 13:24:19,848 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 13:24:19,849 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 13:24:19,856 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 13:24:19,865 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 13:24:19,865 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 13:24:19,866 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 13:24:19,871 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 14:59:00,516 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 14:59:04,504 [10] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 14:59:04,504 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 14:59:04,537 [10] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre order by mem_sexe, mem_age, mem_poids;
+2016-11-13 14:59:04,580 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 14:59:04,581 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 14:59:04,582 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 14:59:04,587 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 14:59:04,602 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 14:59:04,603 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 14:59:04,610 [10] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 14:59:04,623 [10] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 15:04:09,683 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 15:04:15,378 [9] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 15:04:15,379 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 15:04:15,412 [9] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre order by mem_sexe, mem_age, mem_poids;
+2016-11-13 15:04:15,448 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 15:04:15,450 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 15:04:15,450 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 15:04:15,456 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 15:04:15,466 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 15:04:15,466 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 15:04:15,468 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 15:04:15,473 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 15:04:41,891 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 15:04:42,256 [9] INFO  Competition.frm_main - dgvMembre_CellDoubleClick: Sélection d'une ligne.
+2016-11-13 15:04:51,103 [9] INFO  Competition.frm_main - frmMembre.btnOk_Click: Validation du formulaire.
+2016-11-13 15:04:51,103 [9] INFO  Competition.frm_main - frmMembre.btnOk_Click: L'identifiant est connu.
+2016-11-13 15:04:51,105 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 15:04:51,106 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_id = 2
+2016-11-13 15:04:51,108 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 15:04:51,109 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 15:04:51,110 [9] INFO  Competition.Dao - updateMembre: requête = UPDATE membre SET mem_nom = 'Garcin', mem_prenom = 'Hugo-Mathis', mem_sexe = 'M', mem_age = 8, mem_poids = 32, mem_modification = DATETIME('NOW') WHERE mem_id = 2
+2016-11-13 15:04:51,119 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 15:04:51,123 [9] INFO  Competition.frm_main - loadListMembre: Chargement de la liste des poules.
+2016-11-13 15:04:51,123 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 15:04:51,124 [9] INFO  Competition.Dao - loadMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre order by mem_sexe, mem_age, mem_poids;
+2016-11-13 15:04:51,125 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 15:04:51,128 [9] INFO  Competition.frm_main - dgvMembre_RowsRemoved: Suppression d'une ligne.
+2016-11-13 15:04:51,135 [9] INFO  Competition.frm_main - dgvMembre_SelectionChanged: Changement de ligne.
+2016-11-13 15:04:51,142 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 15:04:51,143 [9] INFO  Competition.frm_main - frmMembre.clearForm: Remise à blanc du formulaire.
+2016-11-13 15:05:53,029 [9] INFO  Competition.frm_main - loadListCateg: Chargement de la liste des catégories.
+2016-11-13 15:05:53,029 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 15:05:53,031 [9] INFO  Competition.Dao - loadCategories: requête = SELECT cat_id, cat_nom, cat_agemin, cat_agemax, cat_sexe, cat_poidsmin, cat_poidsmax FROM categorie
+2016-11-13 15:05:53,053 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 15:05:53,056 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 15:05:53,056 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 15:05:53,060 [9] INFO  Competition.frm_main - dgvCateg_SelectionChanged: Changement de ligne.
+2016-11-13 15:37:45,038 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 15:37:49,145 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 15:37:49,179 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where AND MEM_POULE = null order by mem_sexe, mem_age, mem_poids
+2016-11-13 15:38:48,382 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 15:38:52,030 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 15:38:52,063 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule = null order by mem_sexe, mem_age, mem_poids
+2016-11-13 15:38:52,074 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 15:39:31,629 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 15:39:31,630 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule = null order by mem_sexe, mem_age, mem_poids
+2016-11-13 15:39:31,631 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 15:40:07,882 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 15:40:12,669 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:03:14,584 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 16:03:16,536 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:03:25,808 [10] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 16:03:50,078 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:04:15,915 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:04:15,917 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE = null AND mem_id not in ()
+2016-11-13 16:04:15,919 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:04:53,077 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:06:12,385 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 16:06:46,970 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:06:47,003 [10] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 16:06:47,021 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:06:51,714 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:06:51,722 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 16:06:51,723 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:09:22,672 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 16:09:25,308 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:09:25,341 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 16:09:25,359 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:09:25,360 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:09:25,361 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 16:09:25,362 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:09:28,742 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:09:28,745 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_id = 0
+2016-11-13 16:09:28,746 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:09:28,746 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:09:28,749 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_creation) values ('F-3-22', DATETIME('NOW'))
+2016-11-13 16:09:28,781 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:09:55,433 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 16:09:57,477 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:09:57,511 [10] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 16:09:57,529 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:09:57,531 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:09:57,532 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 16:09:57,532 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:11:03,418 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:11:04,729 [10] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_id = 0
+2016-11-13 16:11:08,780 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:11:37,036 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:11:49,615 [10] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_creation) values ('F-3-22', DATETIME('NOW'))
+2016-11-13 16:12:07,099 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:16:13,621 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 16:16:30,636 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:16:30,669 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 16:16:30,685 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:16:30,687 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:16:30,688 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 16:16:30,688 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:16:44,567 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:16:44,570 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 16:16:44,571 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:16:44,572 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:16:44,575 [9] INFO  Competition.Dao - updatePoule: requête = UPDATE poule SET pou_nom = 'F-3-22', pou_modification = DATETIME('NOW') WHERE pou_id = 0
+2016-11-13 16:16:44,578 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:45:33,288 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 16:45:35,742 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:45:35,781 [10] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 16:45:35,799 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:45:35,800 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:45:35,801 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 16:45:35,802 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:45:49,735 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:45:49,738 [10] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 16:45:49,739 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:45:58,694 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:45:58,696 [10] INFO  Competition.Dao - updatePoule: requête = UPDATE poule SET pou_nom = 'F-3-22', pou_modification = DATETIME('NOW') WHERE pou_id = 0
+2016-11-13 16:45:58,699 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:46:19,431 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:46:21,208 [10] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule =  WHERE mem_id = 3
+2016-11-13 16:47:02,682 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 16:47:04,700 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:47:04,733 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 16:47:04,751 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:47:04,752 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:47:04,754 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 16:47:04,754 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:47:07,661 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:47:07,664 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 16:47:07,665 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:47:07,667 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:47:07,669 [9] INFO  Competition.Dao - updatePoule: requête = UPDATE poule SET pou_nom = 'F-3-22', pou_modification = DATETIME('NOW') WHERE pou_id = 0
+2016-11-13 16:47:07,673 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:47:07,674 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:47:48,151 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 16:47:50,015 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:47:50,053 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 16:47:50,074 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:47:50,075 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:47:50,077 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 16:47:50,077 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:47:50,078 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:47:50,080 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 16:47:50,080 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:47:50,081 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 16:47:50,082 [9] INFO  Competition.Dao - updatePoule: requête = UPDATE poule SET pou_nom = 'F-3-22', pou_modification = DATETIME('NOW') WHERE pou_id = 0
+2016-11-13 16:47:50,083 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 16:47:50,084 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:13:25,964 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 17:13:28,261 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:13:28,292 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 17:13:28,308 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:13:28,309 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:13:28,310 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 17:13:28,310 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:13:28,311 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:13:28,312 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 17:13:28,312 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:13:28,313 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:13:28,314 [9] INFO  Competition.Dao - updatePoule: requête = UPDATE poule SET pou_nom = 'F-3-22', pou_modification = DATETIME('NOW') WHERE pou_id = 0
+2016-11-13 17:13:28,315 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:13:28,315 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:13:58,357 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 17:14:00,640 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:14:00,677 [10] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 17:14:00,699 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:14:00,701 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:14:00,702 [10] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 17:14:00,703 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:14:00,704 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:14:00,706 [10] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 17:14:00,706 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:14:44,606 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 17:14:46,647 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:14:46,679 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 17:14:46,695 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:14:46,696 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:14:46,697 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 17:14:46,698 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:14:57,567 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:14:57,570 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 17:14:57,571 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:15:03,731 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:15:03,735 [9] INFO  Competition.Dao - updatePoule: requête = UPDATE poule SET pou_nom = 'F-3-22', pou_modification = DATETIME('NOW') WHERE pou_id = 0
+2016-11-13 17:15:03,740 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:15:25,988 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 17:15:28,079 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:15:28,108 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 17:15:28,124 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:15:28,125 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:15:28,126 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 17:15:28,126 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:15:44,897 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:15:44,899 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 17:15:44,901 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:16:38,826 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 17:16:41,620 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:16:41,652 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 17:16:41,667 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:16:41,668 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:16:41,669 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 17:16:41,669 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:16:47,854 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:16:47,856 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 17:16:47,858 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:16:53,595 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:16:53,598 [9] INFO  Competition.Dao - updatePoule: requête = UPDATE poule SET pou_nom = 'F-3-22', pou_modification = DATETIME('NOW') WHERE pou_id = 0
+2016-11-13 17:16:53,601 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:17:07,324 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:17:12,860 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 1 WHERE mem_id = 3
+2016-11-13 17:17:15,961 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:17:54,989 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:17:54,991 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 24 AND mem_poids <= 25 AND MEM_POULE is null AND mem_id not in (3/)
+2016-11-13 17:22:55,619 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 17:22:57,819 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:22:57,851 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 17:22:57,866 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:22:57,867 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:23:13,510 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 24 AND mem_poids <= 25 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 17:23:13,512 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:23:40,987 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:23:40,990 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-10-24'
+2016-11-13 17:23:40,991 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:23:40,991 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:23:40,994 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_creation) values ('F-10-24', DATETIME('NOW'))
+2016-11-13 17:23:41,023 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 17:23:41,023 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-10-24'
+2016-11-13 17:23:41,024 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:23:41,034 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 17:23:59,014 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:23:59,016 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 2 WHERE mem_id = 5
+2016-11-13 17:23:59,041 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:24:26,037 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:24:26,039 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-10-24'
+2016-11-13 17:24:26,041 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:24:26,042 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:24:26,046 [9] INFO  Competition.Dao - updatePoule: requête = UPDATE poule SET pou_nom = 'F-10-24', pou_modification = DATETIME('NOW') WHERE pou_id = 0
+2016-11-13 17:24:26,047 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:27:39,324 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:27:52,005 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 2 WHERE mem_id = 5
+2016-11-13 17:27:52,053 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:27:52,059 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:49,481 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 24 AND mem_poids <= 25 AND MEM_POULE is null AND mem_id not in (5,8)
+2016-11-13 17:28:49,483 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:49,483 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:49,485 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 12 AND mem_age <= 13 AND mem_poids >= 27 AND mem_poids <= 28 AND MEM_POULE is null AND mem_id not in (5,8)
+2016-11-13 17:28:49,487 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,681 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,688 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-12-27'
+2016-11-13 17:28:52,689 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,690 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,694 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_creation) values ('F-12-27', DATETIME('NOW'))
+2016-11-13 17:28:52,720 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 17:28:52,721 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-12-27'
+2016-11-13 17:28:52,721 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,732 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 17:28:52,732 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,736 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 3 WHERE mem_id = 6
+2016-11-13 17:28:52,745 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,751 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,753 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-12-27'
+2016-11-13 17:28:52,753 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,753 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,755 [9] INFO  Competition.Dao - updatePoule: requête = UPDATE poule SET pou_nom = 'F-12-27', pou_modification = DATETIME('NOW') WHERE pou_id = 0
+2016-11-13 17:28:52,756 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,756 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,757 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 3 WHERE mem_id = 6
+2016-11-13 17:28:52,764 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,769 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,771 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 12 AND mem_age <= 13 AND mem_poids >= 28 AND mem_poids <= 29 AND MEM_POULE is null AND mem_id not in (5,8,6,14)
+2016-11-13 17:28:52,771 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,771 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,772 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 6 AND mem_age <= 7 AND mem_poids >= 19 AND mem_poids <= 20 AND MEM_POULE is null AND mem_id not in (5,8,6,14)
+2016-11-13 17:28:52,773 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,773 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,774 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-6-19'
+2016-11-13 17:28:52,775 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,775 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,776 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_creation) values ('M-6-19', DATETIME('NOW'))
+2016-11-13 17:28:52,783 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 17:28:52,783 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-6-19'
+2016-11-13 17:28:52,783 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,787 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 17:28:52,787 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,789 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 4 WHERE mem_id = 7
+2016-11-13 17:28:52,797 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,802 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,803 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 8 AND mem_age <= 9 AND mem_poids >= 32 AND mem_poids <= 33 AND MEM_POULE is null AND mem_id not in (5,8,6,14,7)
+2016-11-13 17:28:52,804 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,804 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,806 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-8-32'
+2016-11-13 17:28:52,807 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,807 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,808 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_creation) values ('M-8-32', DATETIME('NOW'))
+2016-11-13 17:28:52,815 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 17:28:52,815 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-8-32'
+2016-11-13 17:28:52,816 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,821 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 17:28:52,822 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,823 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 5 WHERE mem_id = 2
+2016-11-13 17:28:52,829 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,835 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,836 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 21 AND mem_poids <= 22 AND MEM_POULE is null AND mem_id not in (5,8,6,14,7,2)
+2016-11-13 17:28:52,837 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,837 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,838 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-21'
+2016-11-13 17:28:52,838 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,838 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,839 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_creation) values ('M-10-21', DATETIME('NOW'))
+2016-11-13 17:28:52,849 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 17:28:52,849 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-21'
+2016-11-13 17:28:52,849 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,850 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 17:28:52,850 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,852 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 6 WHERE mem_id = 10
+2016-11-13 17:28:52,858 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,864 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,865 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-21'
+2016-11-13 17:28:52,866 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,866 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,868 [9] INFO  Competition.Dao - updatePoule: requête = UPDATE poule SET pou_nom = 'M-10-21', pou_modification = DATETIME('NOW') WHERE pou_id = 0
+2016-11-13 17:28:52,868 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,868 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,870 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 6 WHERE mem_id = 10
+2016-11-13 17:28:52,876 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,882 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,883 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-21'
+2016-11-13 17:28:52,884 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,884 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,885 [9] INFO  Competition.Dao - updatePoule: requête = UPDATE poule SET pou_nom = 'M-10-21', pou_modification = DATETIME('NOW') WHERE pou_id = 0
+2016-11-13 17:28:52,885 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,885 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,886 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 6 WHERE mem_id = 10
+2016-11-13 17:28:52,893 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,898 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,900 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 23 AND mem_poids <= 24 AND MEM_POULE is null AND mem_id not in (5,8,6,14,7,2,10,11,12)
+2016-11-13 17:28:52,901 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,901 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,902 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-23'
+2016-11-13 17:28:52,903 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,903 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,905 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_creation) values ('M-10-23', DATETIME('NOW'))
+2016-11-13 17:28:52,911 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 17:28:52,911 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-23'
+2016-11-13 17:28:52,911 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,916 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 17:28:52,916 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,918 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 7 WHERE mem_id = 4
+2016-11-13 17:28:52,925 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,931 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,932 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 25 AND mem_poids <= 26 AND MEM_POULE is null AND mem_id not in (5,8,6,14,7,2,10,11,12,4)
+2016-11-13 17:28:52,933 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,933 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,935 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-25'
+2016-11-13 17:28:52,935 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,936 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,937 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_creation) values ('M-10-25', DATETIME('NOW'))
+2016-11-13 17:28:52,947 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 17:28:52,947 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-25'
+2016-11-13 17:28:52,947 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,951 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 17:28:52,951 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,952 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 8 WHERE mem_id = 9
+2016-11-13 17:28:52,958 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,962 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,964 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 11 AND mem_age <= 12 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in (5,8,6,14,7,2,10,11,12,4,9)
+2016-11-13 17:28:52,964 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,964 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,966 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 11 AND mem_age <= 12 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in (5,8,6,14,7,2,10,11,12,4,9)
+2016-11-13 17:28:52,967 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,967 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,968 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 11 AND mem_age <= 12 AND mem_poids >= 35 AND mem_poids <= 36 AND MEM_POULE is null AND mem_id not in (5,8,6,14,7,2,10,11,12,4,9)
+2016-11-13 17:28:52,969 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,969 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,970 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-11-35'
+2016-11-13 17:28:52,971 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,971 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,972 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_creation) values ('M-11-35', DATETIME('NOW'))
+2016-11-13 17:28:52,978 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 17:28:52,978 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-11-35'
+2016-11-13 17:28:52,979 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,984 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 17:28:52,984 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:52,986 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 9 WHERE mem_id = 13
+2016-11-13 17:28:52,994 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:52,998 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:53,000 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 11 AND mem_age <= 12 AND mem_poids >= 38 AND mem_poids <= 39 AND MEM_POULE is null AND mem_id not in (5,8,6,14,7,2,10,11,12,4,9,13)
+2016-11-13 17:28:53,001 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:53,001 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:53,002 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-11-38'
+2016-11-13 17:28:53,003 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:53,003 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:53,004 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_creation) values ('M-11-38', DATETIME('NOW'))
+2016-11-13 17:28:53,012 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 17:28:53,012 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-11-38'
+2016-11-13 17:28:53,012 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 17:28:53,017 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 17:28:53,017 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 17:28:53,019 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 10 WHERE mem_id = 15
+2016-11-13 17:28:53,026 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:06:40,998 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 19:06:44,287 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:06:44,320 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 19:06:44,336 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:07:23,737 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:07:23,741 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 19:07:23,742 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:07:53,408 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:07:53,411 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 19:07:53,412 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:07:53,412 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:07:53,415 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:07:53,415 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:07:53,416 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('F-3-22',2, DATETIME('NOW'))
+2016-11-13 19:07:53,439 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:07:53,439 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 19:07:53,440 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:07:53,445 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:07:55,803 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:07:55,805 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 11 WHERE mem_id = 3
+2016-11-13 19:07:55,834 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:08:26,525 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:08:26,526 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 24 AND mem_poids <= 25 AND MEM_POULE is null AND mem_id not in (3)
+2016-11-13 19:08:26,527 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:10:08,354 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:10:08,356 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-10-24'
+2016-11-13 19:10:08,357 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:10:08,358 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:10:08,363 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:10:08,363 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:10:08,364 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('F-10-24',2, DATETIME('NOW'))
+2016-11-13 19:10:08,386 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:10:08,386 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-10-24'
+2016-11-13 19:10:08,386 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:10:08,393 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:10:48,210 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:10:48,213 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 12 WHERE mem_id = 5
+2016-11-13 19:10:48,236 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:12,823 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 19:14:15,938 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:15,975 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 19:14:15,991 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,798 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,802 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 19:14:20,804 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,808 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,812 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 19:14:20,813 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,814 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,817 [9] INFO  Competition.Dao - updatePoule: requête = UPDATE poule SET pou_nom = 'F-3-22', pou_modification = DATETIME('NOW') WHERE pou_id = 0
+2016-11-13 19:14:20,820 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,821 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,822 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 11 WHERE mem_id = 3
+2016-11-13 19:14:20,828 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,832 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,834 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 24 AND mem_poids <= 25 AND MEM_POULE is null AND mem_id not in (3)
+2016-11-13 19:14:20,834 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,835 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,836 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-10-24'
+2016-11-13 19:14:20,836 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,836 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,837 [9] INFO  Competition.Dao - updatePoule: requête = UPDATE poule SET pou_nom = 'F-10-24', pou_modification = DATETIME('NOW') WHERE pou_id = 0
+2016-11-13 19:14:20,838 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,838 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,839 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 12 WHERE mem_id = 5
+2016-11-13 19:14:20,845 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,849 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,851 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 12 WHERE mem_id = 5
+2016-11-13 19:14:20,857 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,863 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,864 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 24 AND mem_poids <= 25 AND MEM_POULE is null AND mem_id not in (3,5,8)
+2016-11-13 19:14:20,865 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,865 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,869 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 12 AND mem_age <= 13 AND mem_poids >= 27 AND mem_poids <= 28 AND MEM_POULE is null AND mem_id not in (3,5,8)
+2016-11-13 19:14:20,869 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,870 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,871 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-12-27'
+2016-11-13 19:14:20,872 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,872 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,873 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:20,873 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:14:20,874 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('F-12-27',2, DATETIME('NOW'))
+2016-11-13 19:14:20,881 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:20,881 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-12-27'
+2016-11-13 19:14:20,881 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,887 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:14:20,887 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,888 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 13 WHERE mem_id = 6
+2016-11-13 19:14:20,895 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,900 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,901 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 13 WHERE mem_id = 6
+2016-11-13 19:14:20,911 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,916 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,919 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 12 AND mem_age <= 13 AND mem_poids >= 28 AND mem_poids <= 29 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14)
+2016-11-13 19:14:20,919 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,919 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,921 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 6 AND mem_age <= 7 AND mem_poids >= 19 AND mem_poids <= 20 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14)
+2016-11-13 19:14:20,922 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,922 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,923 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-6-19'
+2016-11-13 19:14:20,924 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,924 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,925 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:20,925 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:14:20,926 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-6-19',2, DATETIME('NOW'))
+2016-11-13 19:14:20,937 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:20,937 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-6-19'
+2016-11-13 19:14:20,937 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,940 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:14:20,940 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,941 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 14 WHERE mem_id = 7
+2016-11-13 19:14:20,947 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,952 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,954 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 8 AND mem_age <= 9 AND mem_poids >= 32 AND mem_poids <= 33 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7)
+2016-11-13 19:14:20,954 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,955 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,956 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-8-32'
+2016-11-13 19:14:20,956 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,956 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,958 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:20,958 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:14:20,958 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-8-32',2, DATETIME('NOW'))
+2016-11-13 19:14:20,969 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:20,969 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-8-32'
+2016-11-13 19:14:20,969 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,973 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:14:20,973 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,975 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 15 WHERE mem_id = 2
+2016-11-13 19:14:20,981 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,986 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,987 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 21 AND mem_poids <= 22 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2)
+2016-11-13 19:14:20,988 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,988 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,989 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-21'
+2016-11-13 19:14:20,989 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:20,989 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:20,991 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:20,991 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:14:20,991 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-10-21',2, DATETIME('NOW'))
+2016-11-13 19:14:20,997 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:20,997 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-21'
+2016-11-13 19:14:20,997 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,001 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:14:21,001 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,002 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 16 WHERE mem_id = 10
+2016-11-13 19:14:21,011 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,017 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,019 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 16 WHERE mem_id = 10
+2016-11-13 19:14:21,030 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,039 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,041 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 16 WHERE mem_id = 10
+2016-11-13 19:14:21,049 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,055 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,056 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 23 AND mem_poids <= 24 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2,10,11,12)
+2016-11-13 19:14:21,057 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,057 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,058 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-23'
+2016-11-13 19:14:21,059 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,059 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,061 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:21,061 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:14:21,061 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-10-23',2, DATETIME('NOW'))
+2016-11-13 19:14:21,068 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:21,068 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-23'
+2016-11-13 19:14:21,068 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,073 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:14:21,074 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,075 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 17 WHERE mem_id = 4
+2016-11-13 19:14:21,082 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,087 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,089 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 25 AND mem_poids <= 26 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2,10,11,12,4)
+2016-11-13 19:14:21,089 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,089 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,090 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-25'
+2016-11-13 19:14:21,091 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,091 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,092 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:21,092 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:14:21,092 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-10-25',2, DATETIME('NOW'))
+2016-11-13 19:14:21,097 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:21,097 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-25'
+2016-11-13 19:14:21,098 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,102 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:14:21,102 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,103 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 18 WHERE mem_id = 9
+2016-11-13 19:14:21,111 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,115 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,116 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 11 AND mem_age <= 12 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2,10,11,12,4,9)
+2016-11-13 19:14:21,117 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,117 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,118 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 11 AND mem_age <= 12 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2,10,11,12,4,9)
+2016-11-13 19:14:21,118 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,118 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,119 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 11 AND mem_age <= 12 AND mem_poids >= 35 AND mem_poids <= 36 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2,10,11,12,4,9)
+2016-11-13 19:14:21,120 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,120 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,121 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-11-35'
+2016-11-13 19:14:21,122 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,122 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,123 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:21,123 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:14:21,124 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-11-35',2, DATETIME('NOW'))
+2016-11-13 19:14:21,129 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:21,129 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-11-35'
+2016-11-13 19:14:21,129 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,133 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:14:21,133 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,134 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 19 WHERE mem_id = 13
+2016-11-13 19:14:21,141 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,146 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,148 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 11 AND mem_age <= 12 AND mem_poids >= 38 AND mem_poids <= 39 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2,10,11,12,4,9,13)
+2016-11-13 19:14:21,148 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,148 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,149 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-11-38'
+2016-11-13 19:14:21,150 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,150 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,151 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:21,151 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:14:21,151 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-11-38',2, DATETIME('NOW'))
+2016-11-13 19:14:21,158 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:14:21,158 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-11-38'
+2016-11-13 19:14:21,159 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:14:21,163 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:14:21,163 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:14:21,164 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 20 WHERE mem_id = 15
+2016-11-13 19:14:21,171 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:15:05,157 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:15:05,158 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 19:15:05,159 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:15:22,727 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:15:22,730 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 19:15:22,731 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:16:35,942 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:16:35,944 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 19:16:35,946 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:16:35,946 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:16:35,949 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:16:35,949 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:16:35,950 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('F-3-22',2, DATETIME('NOW'))
+2016-11-13 19:16:35,973 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:16:35,973 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 19:16:35,974 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:16:35,984 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:16:37,010 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:16:37,013 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 21 WHERE mem_id = 3
+2016-11-13 19:16:37,037 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:16:42,648 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:16:42,651 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 24 AND mem_poids <= 25 AND MEM_POULE is null AND mem_id not in (3)
+2016-11-13 19:16:42,652 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:16:50,031 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:16:50,034 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-10-24'
+2016-11-13 19:16:50,035 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:16:50,035 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:16:50,038 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:16:50,038 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:16:50,040 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('F-10-24',2, DATETIME('NOW'))
+2016-11-13 19:16:50,064 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:16:50,065 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-10-24'
+2016-11-13 19:16:50,065 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:16:50,078 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:16:51,270 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:16:51,271 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 22 WHERE mem_id = 5
+2016-11-13 19:16:51,277 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:06,508 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-13 19:18:08,888 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:08,919 [9] INFO  Competition.Dao - getMembres: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre where mem_poule is null order by mem_sexe, mem_age, mem_poids
+2016-11-13 19:18:08,934 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:08,936 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:08,937 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 3 AND mem_age <= 4 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in ()
+2016-11-13 19:18:08,937 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:08,938 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:08,939 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 19:18:08,939 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:08,939 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:08,941 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:08,941 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:18:08,941 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('F-3-22',2, DATETIME('NOW'))
+2016-11-13 19:18:08,948 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:08,948 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-3-22'
+2016-11-13 19:18:08,948 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:08,951 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:18:08,951 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:08,953 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 23 WHERE mem_id = 3
+2016-11-13 19:18:08,959 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:08,963 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:08,964 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 24 AND mem_poids <= 25 AND MEM_POULE is null AND mem_id not in (3)
+2016-11-13 19:18:08,965 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:08,965 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:08,966 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-10-24'
+2016-11-13 19:18:08,966 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:08,966 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:08,967 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:08,967 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:18:08,967 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('F-10-24',2, DATETIME('NOW'))
+2016-11-13 19:18:08,974 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:08,974 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-10-24'
+2016-11-13 19:18:08,975 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:08,981 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:18:08,981 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:08,982 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 24 WHERE mem_id = 5
+2016-11-13 19:18:08,988 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:08,992 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:08,994 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 24 WHERE mem_id = 8
+2016-11-13 19:18:09,000 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,004 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,006 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 24 AND mem_poids <= 25 AND MEM_POULE is null AND mem_id not in (3,5,8)
+2016-11-13 19:18:09,006 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,006 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,009 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 12 AND mem_age <= 13 AND mem_poids >= 27 AND mem_poids <= 28 AND MEM_POULE is null AND mem_id not in (3,5,8)
+2016-11-13 19:18:09,010 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,010 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,011 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-12-27'
+2016-11-13 19:18:09,011 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,012 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,013 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,013 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:18:09,013 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('F-12-27',2, DATETIME('NOW'))
+2016-11-13 19:18:09,019 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,019 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'F-12-27'
+2016-11-13 19:18:09,019 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,026 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:18:09,026 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,028 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 25 WHERE mem_id = 6
+2016-11-13 19:18:09,034 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,039 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,040 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 25 WHERE mem_id = 14
+2016-11-13 19:18:09,048 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,053 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,055 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'F' AND mem_age >= 12 AND mem_age <= 13 AND mem_poids >= 28 AND mem_poids <= 29 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14)
+2016-11-13 19:18:09,055 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,055 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,057 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 6 AND mem_age <= 7 AND mem_poids >= 19 AND mem_poids <= 20 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14)
+2016-11-13 19:18:09,057 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,057 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,059 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-6-19'
+2016-11-13 19:18:09,059 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,059 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,061 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,061 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:18:09,061 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-6-19',2, DATETIME('NOW'))
+2016-11-13 19:18:09,069 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,069 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-6-19'
+2016-11-13 19:18:09,070 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,075 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:18:09,075 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,076 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 26 WHERE mem_id = 7
+2016-11-13 19:18:09,084 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,088 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,090 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 8 AND mem_age <= 9 AND mem_poids >= 32 AND mem_poids <= 33 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7)
+2016-11-13 19:18:09,091 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,091 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,092 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-8-32'
+2016-11-13 19:18:09,093 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,093 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,094 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,094 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:18:09,095 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-8-32',2, DATETIME('NOW'))
+2016-11-13 19:18:09,100 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,100 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-8-32'
+2016-11-13 19:18:09,101 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,107 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:18:09,107 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,109 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 27 WHERE mem_id = 2
+2016-11-13 19:18:09,116 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,121 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,123 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 21 AND mem_poids <= 22 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2)
+2016-11-13 19:18:09,123 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,123 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,124 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-21'
+2016-11-13 19:18:09,125 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,125 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,126 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,126 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:18:09,127 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-10-21',2, DATETIME('NOW'))
+2016-11-13 19:18:09,133 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,133 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-21'
+2016-11-13 19:18:09,134 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,139 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:18:09,139 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,140 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 28 WHERE mem_id = 10
+2016-11-13 19:18:09,147 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,151 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,153 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 28 WHERE mem_id = 11
+2016-11-13 19:18:09,160 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,165 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,167 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 28 WHERE mem_id = 12
+2016-11-13 19:18:09,183 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,189 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,191 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 23 AND mem_poids <= 24 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2,10,11,12)
+2016-11-13 19:18:09,191 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,192 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,193 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-23'
+2016-11-13 19:18:09,194 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,194 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,195 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,195 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:18:09,196 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-10-23',2, DATETIME('NOW'))
+2016-11-13 19:18:09,202 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,202 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-23'
+2016-11-13 19:18:09,202 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,207 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:18:09,207 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,208 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 29 WHERE mem_id = 4
+2016-11-13 19:18:09,214 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,218 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,219 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 10 AND mem_age <= 11 AND mem_poids >= 25 AND mem_poids <= 26 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2,10,11,12,4)
+2016-11-13 19:18:09,220 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,220 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,221 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-25'
+2016-11-13 19:18:09,221 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,221 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,222 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,222 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:18:09,222 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-10-25',2, DATETIME('NOW'))
+2016-11-13 19:18:09,228 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,228 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-10-25'
+2016-11-13 19:18:09,229 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,233 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:18:09,233 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,235 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 30 WHERE mem_id = 9
+2016-11-13 19:18:09,242 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,245 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,247 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 11 AND mem_age <= 12 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2,10,11,12,4,9)
+2016-11-13 19:18:09,248 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,248 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,249 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 11 AND mem_age <= 12 AND mem_poids >= 22 AND mem_poids <= 23 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2,10,11,12,4,9)
+2016-11-13 19:18:09,250 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,250 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,251 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 11 AND mem_age <= 12 AND mem_poids >= 35 AND mem_poids <= 36 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2,10,11,12,4,9)
+2016-11-13 19:18:09,252 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,252 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,253 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-11-35'
+2016-11-13 19:18:09,254 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,254 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,255 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,255 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:18:09,256 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-11-35',2, DATETIME('NOW'))
+2016-11-13 19:18:09,261 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,261 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-11-35'
+2016-11-13 19:18:09,262 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,266 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:18:09,266 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,267 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 31 WHERE mem_id = 13
+2016-11-13 19:18:09,273 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,277 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,278 [9] INFO  Competition.Dao - getMembre: requête = SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre WHERE mem_sexe = 'M' AND mem_age >= 11 AND mem_age <= 12 AND mem_poids >= 38 AND mem_poids <= 39 AND MEM_POULE is null AND mem_id not in (3,5,8,6,14,7,2,10,11,12,4,9,13)
+2016-11-13 19:18:09,279 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,279 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,280 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-11-38'
+2016-11-13 19:18:09,280 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,280 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,282 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,282 [9] INFO  Competition.Dao - getActiveCompetition: requête = SELECT com_id FROM competition WHERE com_active = 1
+2016-11-13 19:18:09,282 [9] INFO  Competition.Dao - insertPoule: requête = INSERT INTO poule (pou_nom, pou_competition, pou_creation) values ('M-11-38',2, DATETIME('NOW'))
+2016-11-13 19:18:09,288 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-13 19:18:09,288 [9] INFO  Competition.Dao - getPoule: requête = SELECT pou_id, pou_nom FROM poule WHERE pou_nom = 'M-11-38'
+2016-11-13 19:18:09,288 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-13 19:18:09,293 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-13 19:18:09,293 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-13 19:18:09,295 [9] INFO  Competition.Dao - updatePouleMembre: requête = UPDATE membre SET mem_poule = 32 WHERE mem_id = 15
+2016-11-13 19:18:09,302 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:00:53,391 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-14 00:00:53,399 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:00:53,426 [10] INFO  Competition.Dao - loadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:01:34,455 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-14 00:01:34,467 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:01:34,507 [9] INFO  Competition.Dao - loadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:02:15,964 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-14 00:02:15,972 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:02:15,999 [9] INFO  Competition.Dao - loadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:02:18,558 [9] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:02:18,558 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:02:18,559 [9] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:02:18,576 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:02:55,744 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-14 00:02:55,752 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:02:55,781 [10] INFO  Competition.Dao - loadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:02:58,085 [10] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:02:58,085 [10] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:02:58,086 [10] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:02:58,103 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:03:17,620 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-14 00:03:17,628 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:03:17,658 [10] INFO  Competition.Dao - loadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:03:19,719 [10] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:03:19,719 [10] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:03:19,720 [10] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:03:19,737 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:03:37,950 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-14 00:03:37,958 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:03:38,050 [10] INFO  Competition.Dao - loadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:03:40,247 [10] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:03:40,247 [10] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:03:40,248 [10] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:03:40,265 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:24:36,431 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-14 00:24:36,441 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:24:36,469 [9] INFO  Competition.Dao - loadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:24:38,365 [9] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:24:38,365 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:24:38,366 [9] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:24:38,389 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:24:48,047 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:24:48,049 [9] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1 WHERE par_nom = '1'
+2016-11-14 00:25:14,036 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-14 00:25:14,047 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:25:14,083 [10] INFO  Competition.Dao - loadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:25:15,982 [10] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:25:15,982 [10] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:25:15,983 [10] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:25:16,000 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:25:24,944 [10] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:25:24,944 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:25:24,945 [10] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:25:24,949 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:27:07,497 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-14 00:27:07,505 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:27:07,532 [9] INFO  Competition.Dao - loadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:27:09,500 [9] INFO  Competition.frm_main - loadListPoule: Chargement de la liste des poules.
+2016-11-14 00:27:09,500 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:27:09,501 [9] INFO  Competition.Dao - loadPoules: requête = SELECT pou_id, pou_nom, pou_creation, pou_modification FROM poule;
+2016-11-14 00:27:09,518 [9] INFO  Competition.frm_main - dgvPoule_SelectionChanged: Changement de ligne.
+2016-11-14 00:27:09,519 [9] INFO  Competition.frm_main - dgvPoule_SelectionChanged: Changement de ligne.
+2016-11-14 00:27:09,519 [9] INFO  Competition.frm_main - dgvPoule_RowsRemoved: Suppression d'une ligne.
+2016-11-14 00:27:09,522 [9] INFO  Competition.frm_main - dgvPoule_SelectionChanged: Changement de ligne.
+2016-11-14 00:27:09,526 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:27:09,527 [9] INFO  Competition.frm_main - dgvPoule_SelectionChanged: Changement de ligne.
+2016-11-14 00:27:09,528 [9] INFO  Competition.frm_main - dgvPoule_RowsRemoved: Suppression d'une ligne.
+2016-11-14 00:27:09,530 [9] INFO  Competition.frm_main - dgvPoule_SelectionChanged: Changement de ligne.
+2016-11-14 00:27:12,595 [9] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:27:12,596 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:27:12,597 [9] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:27:12,601 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:27:42,300 [9] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:27:42,300 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:27:42,302 [9] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:27:42,305 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:30:44,094 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-14 00:30:44,101 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:30:44,128 [9] INFO  Competition.Dao - loadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:30:46,173 [9] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:30:46,173 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:30:46,174 [9] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:30:53,082 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:34:16,221 [9] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-14 00:34:16,228 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:34:16,256 [9] INFO  Competition.Dao - loadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:34:18,059 [9] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:34:18,059 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:34:18,061 [9] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:34:18,076 [9] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:34:25,712 [9] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = '1'
+2016-11-14 00:34:25,715 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:34:25,726 [9] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-14 00:34:25,727 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:34:25,729 [9] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = '1'
+2016-11-14 00:34:25,730 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:34:28,320 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:34:28,323 [9] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = '1'
+2016-11-14 00:34:28,324 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:34:32,984 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:34:32,985 [9] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = '1'
+2016-11-14 00:34:32,986 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:34:35,125 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:34:35,127 [9] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = '1'
+2016-11-14 00:34:35,127 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:34:36,696 [9] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:34:36,696 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:34:36,697 [9] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:34:36,702 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:34:36,702 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:34:36,703 [9] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = '1'
+2016-11-14 00:34:36,704 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:34:40,866 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:34:40,869 [9] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = '1'
+2016-11-14 00:34:40,870 [9] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:34:53,223 [9] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:37:52,003 [8] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-14 00:37:52,011 [8] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:37:52,040 [8] INFO  Competition.Dao - loadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:37:53,589 [8] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:37:53,589 [8] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:37:53,590 [8] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:37:53,603 [8] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:37:58,239 [8] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = '1'
+2016-11-14 00:38:00,685 [8] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:38:00,697 [8] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-14 00:38:00,697 [8] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:38:01,248 [8] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = '1'
+2016-11-14 00:38:01,249 [8] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:38:03,400 [8] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:38:04,484 [8] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = '1'
+2016-11-14 00:38:04,486 [8] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:39:02,033 [10] INFO  Competition.frm_main - Démarrage de l'application.
+2016-11-14 00:39:02,042 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:39:02,070 [10] INFO  Competition.Dao - loadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:39:03,545 [10] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:39:03,545 [10] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:39:03,546 [10] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:39:03,558 [10] INFO  Competition.Dao - openBase: La base est déjà ouverte.
+2016-11-14 00:39:03,558 [10] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = 'POIDS-DELTA'
+2016-11-14 00:39:03,565 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:39:03,570 [10] INFO  Competition.Dao - closeBase: La base est déjà fermée.
+2016-11-14 00:39:03,570 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:39:03,571 [10] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = 'POIDS-DELTA'
+2016-11-14 00:39:03,577 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:39:04,345 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:39:04,352 [10] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = 'POIDS-DELTA'
+2016-11-14 00:39:04,374 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:39:07,434 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:39:07,435 [10] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = 'AGE-DELTA'
+2016-11-14 00:39:07,454 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:39:09,562 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:39:09,564 [10] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = 'AGE-DELTA'
+2016-11-14 00:39:09,581 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:39:10,873 [10] INFO  Competition.frm_main - loadListParam: Chargement de la liste des poules.
+2016-11-14 00:39:10,873 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:39:10,874 [10] INFO  Competition.Dao - dtLoadParam: requête = SELECT par_nom, par_valeur FROM parametre
+2016-11-14 00:39:10,878 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:39:10,878 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:39:10,879 [10] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = 'POIDS-DELTA'
+2016-11-14 00:39:10,896 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.
+2016-11-14 00:39:12,156 [10] INFO  Competition.Dao - openBase: Ouverture de la base de données.
+2016-11-14 00:39:12,157 [10] INFO  Competition.Dao - updateParam: requête = UPDATE parametre SET par_valeur = '1' WHERE par_nom = 'POIDS-DELTA'
+2016-11-14 00:39:12,178 [10] INFO  Competition.Dao - closeBase: Fermeture de la base de données.

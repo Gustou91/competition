@@ -15,7 +15,9 @@ namespace Competition
     public partial class frm_main : Form
     {
 
-        SQLiteConnection m_dbConnection;
+        Dao dao = Dao.Instance;
+
+        Dictionary<string, string> lstParam;
 
         private static readonly ILog logger = LogManager.GetLogger(typeof(frm_main));
        
@@ -27,7 +29,7 @@ namespace Competition
             Logger.Setup();
             logger.Info("Démarrage de l'application.");
 
-            Dao dao = Dao.Instance;
+            lstParam = dao.loadParam();
 
         }
 
@@ -50,7 +52,7 @@ namespace Competition
 
         private void inscriptionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmPoule frm = new frmPoule();
+            frmMembre frm = new frmMembre();
             frm.MdiParent = this;
             frm.Show();
 
@@ -62,5 +64,50 @@ namespace Competition
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void créerLesPoulesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Récupération de la liste des membres.
+            List<Membre> lstMembres = dao.getMembres();
+            string lstDone = "";
+
+            // Boucle sur les membres.
+            foreach (Membre membre in lstMembres)
+            {
+                // Récupération de tous les membres compatibles avec la poule.
+                List<Membre> lstMembresPoule = dao.getMembres(membre.getSexe(), membre.getAge(), membre.getPoids(), 
+                    int.Parse(lstParam["AGE-DELTA"]), int.Parse(lstParam["POIDS-DELTA"]), lstDone);
+
+                int nbMembres = 0;
+                Poule poule = new Poule();
+                foreach (Membre membreOk in lstMembresPoule)
+                {
+
+                    if (nbMembres % 4 == 0)
+                    {
+                        // Création de la nouvelle poule.
+                        poule = new Poule(membreOk.getSexe() + "-" + membreOk.getAge().ToString() + "-" + membreOk.getPoids().ToString());
+                        poule.insert();
+                    }
+
+                    // Affectation du membre à la poule.
+                    dao.updatePouleMembre(membreOk.getId(), poule.getId());
+
+                    // Mémorisation des id traités.
+                    lstDone = lstDone + membreOk.getId() + ",";
+
+                    nbMembres++;
+                }
+
+            }
+        }
+
+        private void paramètresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmParam frm = new frmParam();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
     }
 }

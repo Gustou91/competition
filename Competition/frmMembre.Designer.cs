@@ -57,13 +57,13 @@
             this.dgvMembre.Location = new System.Drawing.Point(12, 140);
             this.dgvMembre.MultiSelect = false;
             this.dgvMembre.Name = "dgvMembre";
-            this.dgvMembre.Size = new System.Drawing.Size(670, 298);
+            this.dgvMembre.Size = new System.Drawing.Size(738, 344);
             this.dgvMembre.TabIndex = 0;
             this.dgvMembre.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembre_CellDoubleClick);
             this.dgvMembre.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dgvMembre_RowsRemoved);
             this.dgvMembre.SelectionChanged += new System.EventHandler(this.dgvMembre_SelectionChanged);
             // 
-            // gbCateg
+            // gbMembre
             // 
             this.gbMembre.Controls.Add(this.tb_prenom);
             this.gbMembre.Controls.Add(this.label3);
@@ -78,7 +78,7 @@
             this.gbMembre.Controls.Add(this.label1);
             this.gbMembre.Location = new System.Drawing.Point(12, 12);
             this.gbMembre.Name = "gbMembre";
-            this.gbMembre.Size = new System.Drawing.Size(670, 122);
+            this.gbMembre.Size = new System.Drawing.Size(738, 122);
             this.gbMembre.TabIndex = 1;
             this.gbMembre.TabStop = false;
             this.gbMembre.Text = "Membre";
@@ -125,7 +125,7 @@
             this.cbSexe.Items.AddRange(new object[] {
             "Garçon",
             "Fille"});
-            this.cbSexe.Location = new System.Drawing.Point(247, 43);
+            this.cbSexe.Location = new System.Drawing.Point(326, 45);
             this.cbSexe.Name = "cbSexe";
             this.cbSexe.Size = new System.Drawing.Size(121, 21);
             this.cbSexe.TabIndex = 10;
@@ -182,7 +182,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(692, 450);
+            this.ClientSize = new System.Drawing.Size(762, 496);
             this.Controls.Add(this.gbMembre);
             this.Controls.Add(this.dgvMembre);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;

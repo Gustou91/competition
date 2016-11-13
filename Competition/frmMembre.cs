@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using log4net;
+using log4net.Config;
 
 namespace Competition
 {
@@ -14,6 +16,8 @@ namespace Competition
 
         private Dao dao = Dao.Instance;
         private object _selectedMembreId;
+
+        private static readonly ILog logger = LogManager.GetLogger(typeof(frm_main));
 
 
         public frmMembre()
@@ -29,6 +33,8 @@ namespace Competition
 
         private void loadListMembre()
         {
+            logger.Info("loadListMembre: Chargement de la liste des poules.");
+
             dao.openBase();
 
             dgvMembre.DataSource = dao.loadMembres();
@@ -38,28 +44,56 @@ namespace Competition
             dao.closeBase();
         }
 
+        private void clearForm()
+        {
+            logger.Info("frmMembre.clearForm: Remise à blanc du formulaire.");
+
+            tb_nom.Text = "";
+            tb_prenom.Text = "";
+            nudAge.Value = 0;
+            cbSexe.ResetText();
+            nudPoids.Value = 0;
+
+            _selectedMembreId = null;
+        }
+
 
         private void btnOk_Click(object sender, EventArgs e)
         {
+            logger.Info("frmMembre.btnOk_Click: Validation du formulaire.");
             Categorie.Sexe sexe = cbSexe.SelectedItem == "Fille" ? Categorie.Sexe.FEMALE : Categorie.Sexe.MALE;
             Membre membre = new Membre();
 
             if (_selectedMembreId != null)
             {
+                logger.Info("frmMembre.btnOk_Click: L'identifiant est connu.");
                 membre = new Membre(Convert.ToInt32(_selectedMembreId), tb_nom.Text, tb_prenom.Text, sexe, (int)nudAge.Value, (int)nudPoids.Value);
             }
             else
             {
+                logger.Info("frmMembre.btnOk_Click: L'identifiant n'est pas connu.");
                 membre = new Membre(tb_nom.Text, tb_prenom.Text, sexe, (int)nudAge.Value, (int)nudPoids.Value);
             }
             membre.insert();
+            _selectedMembreId = null;
 
             // Mise à jour de la liste.
             loadListMembre();
+
+            clearForm();
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            logger.Info("frmMembre.btnCancel_Click: Annulation du formulaire.");
+
+            clearForm();
+        }
+
 
         private void dgvMembre_SelectionChanged(object sender, EventArgs e)
         {
+            logger.Info("dgvMembre_SelectionChanged: Changement de ligne.");
             foreach (DataGridViewRow row in dgvMembre.SelectedRows)
             {
                 _selectedMembreId = row.Cells[0].Value;
@@ -68,6 +102,7 @@ namespace Competition
 
         private void dgvMembre_RowsRemoved(object sender, DataGridViewRowsRemovedEventArgs e)
         {
+            logger.Info("dgvMembre_RowsRemoved: Suppression d'une ligne.");
             if (_selectedMembreId != null)
             {
                 int membreId = Convert.ToInt32(_selectedMembreId);
@@ -77,6 +112,7 @@ namespace Competition
 
         private void dgvMembre_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            logger.Info("dgvMembre_CellDoubleClick: Sélection d'une ligne.");
             foreach (DataGridViewRow row in dgvMembre.SelectedRows)
             {
                 _selectedMembreId = row.Cells[0].Value;
@@ -87,16 +123,6 @@ namespace Competition
                 nudPoids.Value = Convert.ToInt32(row.Cells[5].Value);
             }
             
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            _selectedMembreId = null;
-            tb_nom.Text = "";
-            tb_prenom.Text = "";
-            nudAge.Value = 0;
-            cbSexe.ResetText();
-            nudPoids.Value = 0;
         }
 
     }

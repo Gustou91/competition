@@ -55,6 +55,12 @@
   <ItemGroup>
     <Compile Include="Categorie.cs" />
     <Compile Include="Competition.cs" />
+    <Compile Include="frmParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmParam.Designer.cs">
+      <DependentUpon>frmParam.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPoule.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     <Compile Include="Poule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmParam.resx">
+      <DependentUpon>frmParam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPoule.resx">
       <DependentUpon>frmPoule.cs</DependentUpon>
     </EmbeddedResource>
