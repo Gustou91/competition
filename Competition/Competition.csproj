@@ -55,6 +55,12 @@
   <ItemGroup>
     <Compile Include="Categorie.cs" />
     <Compile Include="Competition.cs" />
+    <Compile Include="frmAffectation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAffectation.Designer.cs">
+      <DependentUpon>frmAffectation.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmParam.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     <Compile Include="Poule.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAffectation.resx">
+      <DependentUpon>frmAffectation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmParam.resx">
       <DependentUpon>frmParam.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +132,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -135,6 +145,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Fille.bmp" />
+    <None Include="Resources\Fille.png" />
+    <None Include="Resources\Garçon.png" />
     <Content Include="SQLite.Interop.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

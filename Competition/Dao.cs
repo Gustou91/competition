@@ -646,6 +646,44 @@ namespace Competition
             return lstMembre;
         }
 
+        public List<Membre> getMembres(int pouleId)
+        {
+
+            openBase();
+
+            string sql = "SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids FROM membre "
+                        + "WHERE mem_poule = " + pouleId
+                        + " ORDER BY mem_sexe, mem_age, mem_poids";
+            logger.Info("getMembres: requête = " + sql);
+
+            List<Membre> lstMembre = new List<Membre>();
+
+            using (SQLiteCommand cmd = new SQLiteCommand(sql, _dbConnection))
+            {
+                using (SQLiteDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Categorie.Sexe sexe = reader.GetString(3) == "F" ? Categorie.Sexe.FEMALE : Categorie.Sexe.MALE;
+                        Membre membre = new Membre((int)reader.GetInt16(0),
+                                                reader.GetString(1),
+                                                reader.GetString(2),
+                                                sexe,
+                                                (int)reader.GetInt16(4),
+                                                (int)reader.GetInt16(5));
+                        lstMembre.Add(membre);
+                    }
+
+                }
+            }
+
+
+
+            closeBase();
+
+            return lstMembre;
+        }
+
         public List<Membre> getMembres(string sSexe, int age, int poids, int deltaAge, int deltaPoids, string lstDone)
         {
 
@@ -691,7 +729,7 @@ namespace Competition
 
             DataSet dsMembre = new DataSet();
             DataTable dtMembre = new DataTable();
-            string sql = "SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_creation, mem_modification FROM membre order by mem_sexe, mem_age, mem_poids;";
+            string sql = "SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_poule, mem_creation, mem_modification FROM membre order by mem_sexe, mem_age, mem_poids;";
             logger.Info("loadMembres: requête = " + sql);
 
             _DB = new SQLiteDataAdapter(sql, _dbConnection);
@@ -849,12 +887,18 @@ namespace Competition
             return poule;
         }
 
-        public DataTable loadPoules()
+        public DataTable loadPoules(string scope)
         {
 
             DataSet dsPoule = new DataSet();
             DataTable dtPoule = new DataTable();
-            string sql = "SELECT pou_id, pou_nom, pou_creation, pou_modification FROM poule;";
+            string sql;
+            if (scope == "ALL")
+                sql = "SELECT pou_id, pou_nom, pou_creation, pou_modification FROM poule;";
+            else
+                sql = "SELECT pou_id, pou_nom, pou_creation, pou_modification FROM poule "
+                    + "WHERE pou_id in (SELECT distinct mem_poule FROM MEMBRE);";
+
             logger.Info("loadPoules: requête = " + sql);
 
             _DB = new SQLiteDataAdapter(sql, _dbConnection);

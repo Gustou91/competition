@@ -1,5 +1,3 @@
-C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.exe
-C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.pdb
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\bin\Debug\SQLite.Interop.dll
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\bin\Debug\Competition.exe
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\bin\Debug\Competition.pdb
@@ -7,6 +5,8 @@ C:\Users\bgarcin\Documents\Projects\Competition\Competition\bin\Debug\log4net.dl
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\bin\Debug\System.Data.SQLite.dll
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\bin\Debug\log4net.xml
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\bin\Debug\System.Data.SQLite.pdb
+C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.csprojResolveAssemblyReference.cache
+C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frmParam.resources
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frmPoule.resources
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frmMembre.resources
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frmAddCompet.resources
@@ -14,4 +14,6 @@ C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Compet
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frm_main.resources
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.Properties.Resources.resources
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.csproj.GenerateResource.Cache
-C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frmParam.resources
+C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.exe
+C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.pdb
+C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frmAffectation.resources

@@ -14,6 +14,7 @@ namespace Competition
         private Categorie.Sexe _sexe;
         private int _age;
         private int _poids;
+        private int _poule;
         private DateTime _creation;
         private DateTime _modif;
 
@@ -107,6 +108,11 @@ namespace Competition
         public int getPoids()
         {
             return _poids;
+        }
+
+        public int getPoule()
+        {
+            return _poule;
         }
 
 

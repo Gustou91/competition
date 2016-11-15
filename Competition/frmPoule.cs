@@ -38,7 +38,7 @@ namespace Competition
 
             dao.openBase();
 
-            dgvPoule.DataSource = dao.loadPoules();
+            dgvPoule.DataSource = dao.loadPoules("ALL");
             // Resize the DataGridView columns to fit the newly loaded content.
             dgvPoule.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
 

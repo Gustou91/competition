@@ -60,8 +60,10 @@
             this.dgvMembre.Size = new System.Drawing.Size(738, 344);
             this.dgvMembre.TabIndex = 0;
             this.dgvMembre.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembre_CellDoubleClick);
+            this.dgvMembre.CellValidated += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembre_CellValidated);
             this.dgvMembre.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.dgvMembre_RowsRemoved);
             this.dgvMembre.SelectionChanged += new System.EventHandler(this.dgvMembre_SelectionChanged);
+            this.dgvMembre.SizeChanged += new System.EventHandler(this.dgvMembre_SizeChanged);
             // 
             // gbMembre
             // 
@@ -185,10 +187,11 @@
             this.ClientSize = new System.Drawing.Size(762, 496);
             this.Controls.Add(this.gbMembre);
             this.Controls.Add(this.dgvMembre);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmMembre";
             this.Text = "Gestion des membres";
             this.Load += new System.EventHandler(this.frmMembre_Load);
+            this.ResizeEnd += new System.EventHandler(this.frmMembre_ResizeEnd);
+            this.ClientSizeChanged += new System.EventHandler(this.frmMembre_ClientSizeChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembre)).EndInit();
             this.gbMembre.ResumeLayout(false);
             this.gbMembre.PerformLayout();

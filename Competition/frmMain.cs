@@ -109,5 +109,12 @@ namespace Competition
             frm.Show();
         }
 
+        private void affectationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAffectation frm = new frmAffectation();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
     }
 }

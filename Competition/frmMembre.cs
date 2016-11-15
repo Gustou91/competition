@@ -125,5 +125,36 @@ namespace Competition
             
         }
 
+        private void dgvMembre_CellValidated(object sender, DataGridViewCellEventArgs e)
+        {
+            dao.updatePouleMembre(int.Parse(dgvMembre.CurrentRow.Cells[0].Value.ToString()), 
+                                  int.Parse(dgvMembre.CurrentRow.Cells[6].Value.ToString()));
+        }
+
+        private void dgvMembre_SizeChanged(object sender, EventArgs e)
+        {
+            //dgvMembreDisplay();
+        }
+
+        private void frmMembre_ResizeEnd(object sender, EventArgs e)
+        {
+            //dgvMembreDisplay();
+        }
+
+        // Adaptation de la taille du DataGridView à la taille de la fenêtre.
+        private void dgvMembreDisplay()
+        {
+            dgvMembre.Height = this.Size.Height - (dgvMembre.Top + 20 );
+            dgvMembre.Width = this.Size.Width - 27;
+            this.Width = 780;
+
+        }
+
+        private void frmMembre_ClientSizeChanged(object sender, EventArgs e)
+        {
+            dgvMembreDisplay();
+        }
+
+
     }
 }
