@@ -14,6 +14,7 @@ namespace Competition
         private Categorie.Sexe _sexe;
         private int _age;
         private int _poids;
+        private int _club;
         private int _poule;
         private DateTime _creation;
         private DateTime _modif;
@@ -27,25 +28,25 @@ namespace Competition
         {
         }
 
-        public Membre(int id, string name, string firstName, Categorie.Sexe sexe, int age, int poids)
+        public Membre(int id, string name, string firstName, Categorie.Sexe sexe, int age, int poids, int clubId)
         {
             if (id != null)
                 _id = id;
             else
                 throw new System.ArgumentException("L'identifiant doit être initialisé.");
 
-            createMembre(name, firstName, sexe, age, poids);
+            createMembre(name, firstName, sexe, age, poids, clubId);
 
         }
 
-        public Membre(string name, string firstName, Categorie.Sexe sexe, int age, int poids)
+        public Membre(string name, string firstName, Categorie.Sexe sexe, int age, int poids, int clubId)
         {
 
-            createMembre(name, firstName, sexe, age, poids);
+            createMembre(name, firstName, sexe, age, poids, clubId);
 
         }
 
-        private void createMembre(string name, string firstName, Categorie.Sexe sexe, int age, int poids)
+        private void createMembre(string name, string firstName, Categorie.Sexe sexe, int age, int poids, int clubId)
         {
 
             if (name != null && name != String.Empty)
@@ -72,6 +73,7 @@ namespace Competition
             else
                 throw new System.ArgumentException("Le poids minimal doit être >= 10.");
 
+            _club = clubId;
             _sexe = sexe;
             _init = true;
         }
@@ -108,6 +110,11 @@ namespace Competition
         public int getPoids()
         {
             return _poids;
+        }
+
+        public int getClub()
+        {
+            return _club;
         }
 
         public int getPoule()

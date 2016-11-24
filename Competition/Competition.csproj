@@ -37,12 +37,15 @@
     <Reference Include="log4net">
       <HintPath>..\..\log4net-1.2.13\bin\net-cp\4.0\release\log4net.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite, Version=1.0.103.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files (x86)\System.Data.SQLite\2005\bin\System.Data.SQLite.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,12 +57,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Categorie.cs" />
+    <Compile Include="Club.cs" />
     <Compile Include="Competition.cs" />
     <Compile Include="frmAffectation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAffectation.Designer.cs">
       <DependentUpon>frmAffectation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClub.Designer.cs">
+      <DependentUpon>frmClub.cs</DependentUpon>
     </Compile>
     <Compile Include="frmParam.cs">
       <SubType>Form</SubType>
@@ -106,6 +116,9 @@
     <EmbeddedResource Include="frmAffectation.resx">
       <DependentUpon>frmAffectation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmClub.resx">
+      <DependentUpon>frmClub.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmParam.resx">
       <DependentUpon>frmParam.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +147,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

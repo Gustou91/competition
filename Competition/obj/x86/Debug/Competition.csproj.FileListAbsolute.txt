@@ -17,3 +17,6 @@ C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Compet
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.exe
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.pdb
 C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frmAffectation.resources
+C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\RdlCompile.cache
+C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\RdlCompile.compiled
+C:\Users\bgarcin\Documents\Projects\Competition\Competition\obj\x86\Debug\Competition.frmClub.resources

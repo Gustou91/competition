@@ -27,6 +27,18 @@ namespace Competition
 
         private void frmMembre_Load(object sender, EventArgs e)
         {
+            // Chargement de la liste des clubs.
+            List<Club> lstClub = dao.getClub();
+
+            // Alimentation de la combobox des clubs.
+            foreach( Club club in lstClub)
+            {
+                ComboboxItem item = new ComboboxItem();
+                item.Value = club.getId();
+                item.Text = club.getNom();
+                cblstClub.Items.Add(item);
+            }
+
             loadListMembre();
         }
 
@@ -40,7 +52,7 @@ namespace Competition
             dgvMembre.DataSource = dao.loadMembres();
             // Resize the DataGridView columns to fit the newly loaded content.
             dgvMembre.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
-
+                        
             dao.closeBase();
         }
 
@@ -53,6 +65,7 @@ namespace Competition
             nudAge.Value = 0;
             cbSexe.ResetText();
             nudPoids.Value = 0;
+            cblstClub.Text = "";
 
             _selectedMembreId = null;
         }
@@ -64,15 +77,19 @@ namespace Competition
             Categorie.Sexe sexe = cbSexe.SelectedItem == "Fille" ? Categorie.Sexe.FEMALE : Categorie.Sexe.MALE;
             Membre membre = new Membre();
 
+            ComboboxItem cbItem = (ComboboxItem)cblstClub.SelectedItem;
+
+            int clubId = (int) cbItem.Value;
+
             if (_selectedMembreId != null)
             {
                 logger.Info("frmMembre.btnOk_Click: L'identifiant est connu.");
-                membre = new Membre(Convert.ToInt32(_selectedMembreId), tb_nom.Text, tb_prenom.Text, sexe, (int)nudAge.Value, (int)nudPoids.Value);
+                membre = new Membre(Convert.ToInt32(_selectedMembreId), tb_nom.Text, tb_prenom.Text, sexe, (int)nudAge.Value, (int)nudPoids.Value, clubId);
             }
             else
             {
                 logger.Info("frmMembre.btnOk_Click: L'identifiant n'est pas connu.");
-                membre = new Membre(tb_nom.Text, tb_prenom.Text, sexe, (int)nudAge.Value, (int)nudPoids.Value);
+                membre = new Membre(tb_nom.Text, tb_prenom.Text, sexe, (int)nudAge.Value, (int)nudPoids.Value, clubId);
             }
             membre.insert();
             _selectedMembreId = null;
@@ -121,14 +138,15 @@ namespace Competition
                 cbSexe.SelectedIndex = row.Cells[3].Value.ToString() == "F" ? 1 : 0;
                 nudAge.Value = Convert.ToInt32(row.Cells[4].Value);
                 nudPoids.Value = Convert.ToInt32(row.Cells[5].Value);
+                cblstClub.SelectedIndex = cblstClub.FindString(row.Cells[6].Value.ToString());
             }
             
         }
 
         private void dgvMembre_CellValidated(object sender, DataGridViewCellEventArgs e)
         {
-            dao.updatePouleMembre(int.Parse(dgvMembre.CurrentRow.Cells[0].Value.ToString()), 
-                                  int.Parse(dgvMembre.CurrentRow.Cells[6].Value.ToString()));
+            /*dao.updatePouleMembre(int.Parse(dgvMembre.CurrentRow.Cells[0].Value.ToString()), 
+                                  int.Parse(dgvMembre.CurrentRow.Cells[6].Value.ToString()));*/
         }
 
         private void dgvMembre_SizeChanged(object sender, EventArgs e)
@@ -156,5 +174,17 @@ namespace Competition
         }
 
 
+    }
+
+
+    public class ComboboxItem
+    {
+        public string Text { get; set; }
+        public object Value { get; set; }
+
+        public override string ToString()
+        {
+            return Text;
+        }
     }
 }

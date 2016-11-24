@@ -21,9 +21,12 @@ namespace Competition
 
         private void frmAffectation_Load(object sender, EventArgs e)
         {
+            this.AllowDrop = true;
+
             loadPoules();
 
-            lvMembre.LargeImageList = ilIcon;
+            lvMembre1.LargeImageList = ilIcon;
+            lvMembre1.AllowDrop = true;
 
         }
 
@@ -33,9 +36,9 @@ namespace Competition
 
             DataTable dtPoule = dao.loadPoules("ACTIVE");
 
-            cbPoule.DataSource = dtPoule;
-            cbPoule.DisplayMember = dtPoule.Columns[1].ToString();
-            cbPoule.ValueMember = dtPoule.Columns[0].ToString();
+            cbPoule1.DataSource = dtPoule;
+            cbPoule1.DisplayMember = dtPoule.Columns[1].ToString();
+            cbPoule1.ValueMember = dtPoule.Columns[0].ToString();
 
             dao.closeBase();
         }
@@ -44,11 +47,11 @@ namespace Competition
         private void loadMembres(int pouleId)
         {
             List<Membre> lstMembres = dao.getMembres(pouleId);
-            lvMembre.Clear();
+            lvMembre1.Clear();
 
             foreach (Membre membre in lstMembres)
             {
-                ListViewItem lviMembre = lvMembre.Items.Add(membre.getPrenom() + " " + membre.getNom());
+                ListViewItem lviMembre = lvMembre1.Items.Add(membre.getPrenom() + " " + membre.getNom());
                 lviMembre.ImageIndex = membre.getSexe() == "M" ? 0 : 1;
             }
         }
@@ -56,14 +59,77 @@ namespace Competition
 
         private void cbPoule_SelectedIndexChanged(object sender, EventArgs e)
         {
-            object selectedValue = cbPoule.SelectedValue;
+            object selectedValue = cbPoule1.SelectedValue;
             if (selectedValue.GetType().Equals(typeof(Int64)))
             {
-                Int64 pouleId64 = (Int64)cbPoule.SelectedValue;
+                Int64 pouleId64 = (Int64)cbPoule1.SelectedValue;
                 //int pouleId = (int)cbPoule.SelectedValue;
                 int pouleId = (int)pouleId64;
                 loadMembres(pouleId);
             }
         }
+
+
+        #region Gestion du glisser-déplacer.
+        private void lvMembre1_DragDrop(object sender, DragEventArgs e)
+        {
+            ListViewItem item = e.Data.GetData(typeof(ListViewItem)) as ListViewItem;
+            if (item != null)
+            {
+                Point pt = this.lvMembre1.PointToClient(new Point(e.X,
+                e.Y));
+                ListViewItem hoveritem = this.lvMembre1.GetItemAt(pt.X, pt.Y);
+            }
+        }
+
+        private void lvMembre1_ItemDrag(object sender, ItemDragEventArgs e)
+        {
+            this.lvMembre1.DoDragDrop(this.lvMembre1.SelectedItems, DragDropEffects.Copy | DragDropEffects.Move);
+            //MessageBox.Show("AllowDrop = " + lvMembre.AllowDrop.ToString());
+
+
+        }
+
+        private void lvMembre1_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(typeof(ListViewItem)))
+            {
+                e.Effect = DragDropEffects.Copy;
+            }
+            
+            //MessageBox.Show("AllowDrop = " + lvMembre.AllowDrop.ToString());
+
+        }
+
+
+        private void lvMembre2_DragDrop(object sender, DragEventArgs e)
+        {
+            ListViewItem item = e.Data.GetData(typeof(ListViewItem)) as ListViewItem;
+            if (item != null)
+            {
+                Point pt = this.lvMembre2.PointToClient(new Point(e.X,
+                e.Y));
+                ListViewItem hoveritem = this.lvMembre2.GetItemAt(pt.X, pt.Y);
+                lvMembre2.Items.Add(hoveritem);
+            }
+
+        }
+
+        private void lvMembre2_ItemDrag(object sender, ItemDragEventArgs e)
+        {
+            this.lvMembre2.DoDragDrop(this.lvMembre2.SelectedItems, DragDropEffects.Copy | DragDropEffects.Move);
+        }
+
+        private void lvMembre2_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(typeof(ListViewItem)))
+            {
+                e.Effect = DragDropEffects.Copy;
+            }
+
+        }
+        #endregion
+
+
     }
 }

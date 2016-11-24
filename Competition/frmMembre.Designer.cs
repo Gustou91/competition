@@ -41,6 +41,8 @@
             this.nudAge = new System.Windows.Forms.NumericUpDown();
             this.tb_nom = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.cblstClub = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembre)).BeginInit();
             this.gbMembre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPoids)).BeginInit();
@@ -57,7 +59,7 @@
             this.dgvMembre.Location = new System.Drawing.Point(12, 140);
             this.dgvMembre.MultiSelect = false;
             this.dgvMembre.Name = "dgvMembre";
-            this.dgvMembre.Size = new System.Drawing.Size(738, 344);
+            this.dgvMembre.Size = new System.Drawing.Size(1181, 485);
             this.dgvMembre.TabIndex = 0;
             this.dgvMembre.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembre_CellDoubleClick);
             this.dgvMembre.CellValidated += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMembre_CellValidated);
@@ -67,6 +69,8 @@
             // 
             // gbMembre
             // 
+            this.gbMembre.Controls.Add(this.label4);
+            this.gbMembre.Controls.Add(this.cblstClub);
             this.gbMembre.Controls.Add(this.tb_prenom);
             this.gbMembre.Controls.Add(this.label3);
             this.gbMembre.Controls.Add(this.btnCancel);
@@ -80,7 +84,7 @@
             this.gbMembre.Controls.Add(this.label1);
             this.gbMembre.Location = new System.Drawing.Point(12, 12);
             this.gbMembre.Name = "gbMembre";
-            this.gbMembre.Size = new System.Drawing.Size(738, 122);
+            this.gbMembre.Size = new System.Drawing.Size(1181, 122);
             this.gbMembre.TabIndex = 1;
             this.gbMembre.TabStop = false;
             this.gbMembre.Text = "Membre";
@@ -103,7 +107,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(390, 77);
+            this.btnCancel.Location = new System.Drawing.Point(390, 82);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 12;
@@ -113,7 +117,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(471, 77);
+            this.btnOk.Location = new System.Drawing.Point(471, 82);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 23);
             this.btnOk.TabIndex = 11;
@@ -180,11 +184,28 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nom";
             // 
+            // cblstClub
+            // 
+            this.cblstClub.FormattingEnabled = true;
+            this.cblstClub.Location = new System.Drawing.Point(42, 79);
+            this.cblstClub.Name = "cblstClub";
+            this.cblstClub.Size = new System.Drawing.Size(220, 21);
+            this.cblstClub.TabIndex = 15;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 82);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(28, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Club";
+            // 
             // frmMembre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 496);
+            this.ClientSize = new System.Drawing.Size(1205, 626);
             this.Controls.Add(this.gbMembre);
             this.Controls.Add(this.dgvMembre);
             this.Name = "frmMembre";
@@ -216,6 +237,8 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.TextBox tb_prenom;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cblstClub;
 
     }
 }

@@ -80,17 +80,25 @@ namespace Competition
 
                 int nbMembres = 0;
                 Poule poule = new Poule();
+                int noPoule = 1;
                 foreach (Membre membreOk in lstMembresPoule)
                 {
-
+                    logger.Info("créerLesPoulesToolStripMenuItem_Click: nbMembres = " + nbMembres.ToString());
                     if (nbMembres % 4 == 0)
                     {
                         // Création de la nouvelle poule.
-                        poule = new Poule(membreOk.getSexe() + "-" + membreOk.getAge().ToString() + "-" + membreOk.getPoids().ToString());
+                        char lettrePoule = (char) (64 + noPoule);
+                        string nomPoule = membreOk.getSexe() + "-" + membreOk.getAge().ToString() + "-" + membreOk.getPoids().ToString() + "-" + lettrePoule;
+                        noPoule ++;
+                        logger.Info("créerLesPoulesToolStripMenuItem_Click: Création de la poule " + nomPoule);
+                        poule = new Poule(nomPoule);
                         poule.insert();
                     }
 
                     // Affectation du membre à la poule.
+                    logger.Info("créerLesPoulesToolStripMenuItem_Click: Affectation du membre " 
+                                + membreOk.getId() + " - " + membreOk.getPrenom() + " " + membreOk.getNom() 
+                                + " à la poule " + poule.getId());
                     dao.updatePouleMembre(membreOk.getId(), poule.getId());
 
                     // Mémorisation des id traités.
@@ -114,6 +122,29 @@ namespace Competition
             frmAffectation frm = new frmAffectation();
             frm.MdiParent = this;
             frm.Show();
+        }
+
+        private void clubsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmClub frm = new frmClub();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void réinitialiserLesPoulesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Attention, cette action va supprimer toutes les poules. Souhaitez-vous continuer?",
+                "Réinitialisation des poules",
+                MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                dao.deletePoule();
+            }
+        }
+
+        private void frm_main_Load(object sender, EventArgs e)
+        {
+
+            
         }
 
     }

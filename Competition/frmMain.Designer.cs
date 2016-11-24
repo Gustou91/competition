@@ -37,10 +37,12 @@
             this.créerLesPoulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gérerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gérerLesPoulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.affectationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.réinitialiserLesPoulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paramètresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.résultatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableauDeBordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.affectationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clubsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,8 +107,10 @@
             // gérerToolStripMenuItem
             // 
             this.gérerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clubsToolStripMenuItem,
             this.gérerLesPoulesToolStripMenuItem,
             this.affectationsToolStripMenuItem,
+            this.réinitialiserLesPoulesToolStripMenuItem,
             this.paramètresToolStripMenuItem});
             this.gérerToolStripMenuItem.Name = "gérerToolStripMenuItem";
             this.gérerToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
@@ -115,14 +119,28 @@
             // gérerLesPoulesToolStripMenuItem
             // 
             this.gérerLesPoulesToolStripMenuItem.Name = "gérerLesPoulesToolStripMenuItem";
-            this.gérerLesPoulesToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.gérerLesPoulesToolStripMenuItem.Text = "Gérer les poules";
+            this.gérerLesPoulesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.gérerLesPoulesToolStripMenuItem.Text = "Poules";
             this.gérerLesPoulesToolStripMenuItem.Click += new System.EventHandler(this.gérerLesPoulesToolStripMenuItem_Click);
+            // 
+            // affectationsToolStripMenuItem
+            // 
+            this.affectationsToolStripMenuItem.Name = "affectationsToolStripMenuItem";
+            this.affectationsToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.affectationsToolStripMenuItem.Text = "Affectations";
+            this.affectationsToolStripMenuItem.Click += new System.EventHandler(this.affectationsToolStripMenuItem_Click);
+            // 
+            // réinitialiserLesPoulesToolStripMenuItem
+            // 
+            this.réinitialiserLesPoulesToolStripMenuItem.Name = "réinitialiserLesPoulesToolStripMenuItem";
+            this.réinitialiserLesPoulesToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.réinitialiserLesPoulesToolStripMenuItem.Text = "Réinitialiser les poules";
+            this.réinitialiserLesPoulesToolStripMenuItem.Click += new System.EventHandler(this.réinitialiserLesPoulesToolStripMenuItem_Click);
             // 
             // paramètresToolStripMenuItem
             // 
             this.paramètresToolStripMenuItem.Name = "paramètresToolStripMenuItem";
-            this.paramètresToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.paramètresToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.paramètresToolStripMenuItem.Text = "Paramètres";
             this.paramètresToolStripMenuItem.Click += new System.EventHandler(this.paramètresToolStripMenuItem_Click);
             // 
@@ -140,12 +158,12 @@
             this.tableauDeBordToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.tableauDeBordToolStripMenuItem.Text = "Tableau de bord";
             // 
-            // affectationsToolStripMenuItem
+            // clubsToolStripMenuItem
             // 
-            this.affectationsToolStripMenuItem.Name = "affectationsToolStripMenuItem";
-            this.affectationsToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.affectationsToolStripMenuItem.Text = "Affectations";
-            this.affectationsToolStripMenuItem.Click += new System.EventHandler(this.affectationsToolStripMenuItem_Click);
+            this.clubsToolStripMenuItem.Name = "clubsToolStripMenuItem";
+            this.clubsToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.clubsToolStripMenuItem.Text = "Clubs";
+            this.clubsToolStripMenuItem.Click += new System.EventHandler(this.clubsToolStripMenuItem_Click);
             // 
             // frm_main
             // 
@@ -158,6 +176,7 @@
             this.Name = "frm_main";
             this.Text = "USM - JU JIT SO: Gestion des compétitions";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frm_main_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -180,6 +199,8 @@
         private System.Windows.Forms.ToolStripMenuItem gérerLesPoulesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paramètresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem affectationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem réinitialiserLesPoulesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clubsToolStripMenuItem;
     }
 }
 
