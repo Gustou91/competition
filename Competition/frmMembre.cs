@@ -27,21 +27,27 @@ namespace Competition
 
         private void frmMembre_Load(object sender, EventArgs e)
         {
+            loadListClub();
+            loadListMembre();
+        }
+
+
+        private void loadListClub()
+        {
             // Chargement de la liste des clubs.
             List<Club> lstClub = dao.getClub();
 
             // Alimentation de la combobox des clubs.
-            foreach( Club club in lstClub)
+            cblstClub.Items.Clear();
+            foreach (Club club in lstClub)
             {
                 ComboboxItem item = new ComboboxItem();
                 item.Value = club.getId();
                 item.Text = club.getNom();
                 cblstClub.Items.Add(item);
             }
-
-            loadListMembre();
+ 
         }
-
 
         private void loadListMembre()
         {
@@ -79,25 +85,32 @@ namespace Competition
 
             ComboboxItem cbItem = (ComboboxItem)cblstClub.SelectedItem;
 
-            int clubId = (int) cbItem.Value;
-
-            if (_selectedMembreId != null)
+            if (cbItem == null)
             {
-                logger.Info("frmMembre.btnOk_Click: L'identifiant est connu.");
-                membre = new Membre(Convert.ToInt32(_selectedMembreId), tb_nom.Text, tb_prenom.Text, sexe, (int)nudAge.Value, (int)nudPoids.Value, clubId);
+                MessageBox.Show("Le choix d'un club est obligatoire.", "Erreur", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             else
             {
-                logger.Info("frmMembre.btnOk_Click: L'identifiant n'est pas connu.");
-                membre = new Membre(tb_nom.Text, tb_prenom.Text, sexe, (int)nudAge.Value, (int)nudPoids.Value, clubId);
+                int clubId = (int)cbItem.Value;
+
+                if (_selectedMembreId != null)
+                {
+                    logger.Info("frmMembre.btnOk_Click: L'identifiant est connu.");
+                    membre = new Membre(Convert.ToInt32(_selectedMembreId), tb_nom.Text, tb_prenom.Text, sexe, (int)nudAge.Value, (int)nudPoids.Value, clubId);
+                }
+                else
+                {
+                    logger.Info("frmMembre.btnOk_Click: L'identifiant n'est pas connu.");
+                    membre = new Membre(tb_nom.Text, tb_prenom.Text, sexe, (int)nudAge.Value, (int)nudPoids.Value, clubId);
+                }
+                membre.insert();
+                _selectedMembreId = null;
+
+                // Mise à jour de la liste.
+                loadListMembre();
+
+                clearForm();
             }
-            membre.insert();
-            _selectedMembreId = null;
-
-            // Mise à jour de la liste.
-            loadListMembre();
-
-            clearForm();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -171,6 +184,15 @@ namespace Competition
         private void frmMembre_ClientSizeChanged(object sender, EventArgs e)
         {
             dgvMembreDisplay();
+        }
+
+        private void btnAddClub_Click(object sender, EventArgs e)
+        {
+            frmClub frm = new frmClub();
+            //frm.MdiParent = this.ParentForm;
+            frm.ShowDialog();
+
+            loadListClub();
         }
 
 

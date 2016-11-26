@@ -30,6 +30,8 @@
         {
             this.dgvMembre = new System.Windows.Forms.DataGridView();
             this.gbMembre = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cblstClub = new System.Windows.Forms.ComboBox();
             this.tb_prenom = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -41,8 +43,7 @@
             this.nudAge = new System.Windows.Forms.NumericUpDown();
             this.tb_nom = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cblstClub = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.btnAddClub = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMembre)).BeginInit();
             this.gbMembre.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPoids)).BeginInit();
@@ -69,6 +70,7 @@
             // 
             // gbMembre
             // 
+            this.gbMembre.Controls.Add(this.btnAddClub);
             this.gbMembre.Controls.Add(this.label4);
             this.gbMembre.Controls.Add(this.cblstClub);
             this.gbMembre.Controls.Add(this.tb_prenom);
@@ -88,6 +90,23 @@
             this.gbMembre.TabIndex = 1;
             this.gbMembre.TabStop = false;
             this.gbMembre.Text = "Membre";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(12, 82);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(28, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Club";
+            // 
+            // cblstClub
+            // 
+            this.cblstClub.FormattingEnabled = true;
+            this.cblstClub.Location = new System.Drawing.Point(42, 79);
+            this.cblstClub.Name = "cblstClub";
+            this.cblstClub.Size = new System.Drawing.Size(220, 21);
+            this.cblstClub.TabIndex = 15;
             // 
             // tb_prenom
             // 
@@ -184,22 +203,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nom";
             // 
-            // cblstClub
+            // btnAddClub
             // 
-            this.cblstClub.FormattingEnabled = true;
-            this.cblstClub.Location = new System.Drawing.Point(42, 79);
-            this.cblstClub.Name = "cblstClub";
-            this.cblstClub.Size = new System.Drawing.Size(220, 21);
-            this.cblstClub.TabIndex = 15;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 82);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 13);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Club";
+            this.btnAddClub.Location = new System.Drawing.Point(268, 79);
+            this.btnAddClub.Name = "btnAddClub";
+            this.btnAddClub.Size = new System.Drawing.Size(21, 23);
+            this.btnAddClub.TabIndex = 17;
+            this.btnAddClub.Text = "+";
+            this.btnAddClub.UseVisualStyleBackColor = true;
+            this.btnAddClub.Click += new System.EventHandler(this.btnAddClub_Click);
             // 
             // frmMembre
             // 
@@ -239,6 +251,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cblstClub;
+        private System.Windows.Forms.Button btnAddClub;
 
     }
 }

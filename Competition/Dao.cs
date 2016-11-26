@@ -58,61 +58,81 @@ namespace Competition
 
                 openBase();
 
-                // Table des paramètres.
+                #region Table des paramètres.
                 string sql = "CREATE TABLE parametre ( par_id INTEGER PRIMARY KEY ON CONFLICT ROLLBACK AUTOINCREMENT, "
                              + "par_nom VARCHAR (30) UNIQUE, par_valeur VARCHAR (255) )";
                 SQLiteCommand command = new SQLiteCommand(sql, _dbConnection);
                 command.ExecuteNonQuery();
 
-                // Table des compétitons.
+                sql = "INSERT INTO parametre (par_nom, par_valeur) VALUES ('POIDS-DELTA', 1)";
+                command = new SQLiteCommand(sql, _dbConnection);
+                command.ExecuteNonQuery();
+
+                sql = "INSERT INTO parametre (par_nom, par_valeur) VALUES ('AGE-DELTA', 1)";
+                command = new SQLiteCommand(sql, _dbConnection);
+                command.ExecuteNonQuery();
+
+                sql = "INSERT INTO parametre (par_nom, par_valeur) VALUES ('POULE-DIM', 4)";
+                command = new SQLiteCommand(sql, _dbConnection);
+                command.ExecuteNonQuery();
+                #endregion
+
+                #region Table des compétitons.
                 sql = "CREATE TABLE competition (com_id INTEGER PRIMARY KEY ON CONFLICT ROLLBACK AUTOINCREMENT, "
                      + "com_nom STRING (50) NOT NULL, com_active BOOLEAN NOT NULL, com_creation DATETIME NOT NULL)";
                 command = new SQLiteCommand(sql, _dbConnection);
                 command.ExecuteNonQuery();
+                #endregion
 
-                // Table des catégories.
+                #region Table des catégories.
                 sql = "CREATE TABLE categorie ( cat_id INTEGER PRIMARY KEY ON CONFLICT ROLLBACK AUTOINCREMENT, " 
                     + "cat_nom STRING (50) NOT NULL, cat_agemin INT NOT NULL, cat_agemax INT NOT NULL, "
                     + "cat_sexe CHAR (1) NOT NULL, cat_poidsmin INT NOT NULL, cat_poidsmax INT NOT NULL, "
                     + "cat_creation DATETIME NOT NULL, cat_modification DATETIME )";
                 command = new SQLiteCommand(sql, _dbConnection);
                 command.ExecuteNonQuery();
+                #endregion
 
-                // Table des clubs.
+                #region Table des clubs.
                 sql = "CREATE TABLE club (clu_id INTEGER PRIMARY KEY ON CONFLICT ROLLBACK AUTOINCREMENT, "
                     + "clu_nom STRING (50) UNIQUE NOT NULL, "
                     + "clu_creation DATETIME NOT NULL, clu_modification DATETIME)";
                 command = new SQLiteCommand(sql, _dbConnection);
                 command.ExecuteNonQuery();
+                #endregion
 
-                // Table des membres.
+                #region Table des membres.
                 sql = "CREATE TABLE membre (mem_id INTEGER PRIMARY KEY ON CONFLICT ROLLBACK AUTOINCREMENT, "
                     + "mem_nom STRING (50) NOT NULL, mem_prenom STRING (50) NOT NULL, mem_sexe CHAR (1) NOT NULL, "
                     + "mem_age INT (2) NOT NULL, mem_poids INT (3) NOT NULL, mem_club INTEGER REFERENCES club (clu_id), "
-                    + "mem_poule INT REFERENCES poule (pou_id), mem_creation DATETIME NOT NULL)";
+                    + "mem_poule INT REFERENCES poule (pou_id), mem_creation DATETIME NOT NULL, mem_modification DATETIME)";
                 command = new SQLiteCommand(sql, _dbConnection);
                 command.ExecuteNonQuery();
+                #endregion
 
-                // Table des poules.
+                #region Table des poules.
                 sql = "CREATE TABLE poule (pou_id INTEGER PRIMARY KEY ON CONFLICT ROLLBACK AUTOINCREMENT, "
                     + "pou_nom STRING (10) NOT NULL UNIQUE, pou_competition INT REFERENCES competition (com_id) ON DELETE CASCADE ON UPDATE CASCADE, "
                     + "pou_creation DATETIME NOT NULL, pou_modification DATETIME)";
                 command = new SQLiteCommand(sql, _dbConnection);
                 command.ExecuteNonQuery();
+                #endregion
 
-                // Table des randori.
+                #region Table des randori.
                 sql = "CREATE TABLE randori ( ran_id INTEGER PRIMARY KEY ON CONFLICT ROLLBACK AUTOINCREMENT, "
                     + "ran_membre1 INTEGER REFERENCES membre (mem_id), ran_membre2 INTEGER REFERENCES membre (mem_id) )";
                 command = new SQLiteCommand(sql, _dbConnection);
                 command.ExecuteNonQuery();
+                #endregion
 
-                // Table des résultats.
+                #region Table des résultats.
                 sql = "CREATE TABLE resultat ( res_id INTEGER PRIMARY KEY ON CONFLICT ROLLBACK AUTOINCREMENT, "
                     + "res_membre INTEGER REFERENCES membre (mem_id), "
                     + "res_randori INTEGER REFERENCES randori (ran_id), res_victoire BOOLEAN NOT NULL, "
                     + "res_points INT NOT NULL)";
                 command = new SQLiteCommand(sql, _dbConnection);
                 command.ExecuteNonQuery();
+                #endregion
 
                 closeBase();
 
@@ -250,9 +270,12 @@ namespace Competition
             {
                 using (SQLiteDataReader reader = cmd.ExecuteReader())
                 {
-                    reader.Read();
-                    name = reader.GetString(0);
-                    logger.Info("existsActiveCompetition: name = " + name);
+                    if (reader.HasRows)
+                    {
+                        reader.Read();
+                        name = reader.GetString(0);
+                        logger.Info("existsActiveCompetition: name = " + name);
+                    }
 
                 }
             }
@@ -855,7 +878,7 @@ namespace Competition
             openBase();
 
             string sql = "SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_club "
-                        + "FROM membre where mem_poule is null order by mem_sexe, mem_poids";
+                        + "FROM membre WHERE mem_poule is null order by mem_sexe, mem_poids";
             logger.Info("getMembres: requête = " + sql);
 
             List<Membre> lstMembre = new List<Membre>();
@@ -926,7 +949,7 @@ namespace Competition
             return lstMembre;
         }
 
-        public List<Membre> getMembres(string sSexe, int age, int poids, int deltaAge, int deltaPoids, string lstDone)
+        public List<Membre> getMembres(string sSexe, int age, int poids, int deltaAge, int deltaPoids, string lstClub, string lstDone)
         {
 
             openBase();
@@ -938,7 +961,7 @@ namespace Competition
             string sql = "SELECT mem_id, mem_nom, mem_prenom, mem_sexe, mem_age, mem_poids, mem_club FROM membre WHERE mem_sexe = '" + sSexe 
                 + "' AND mem_age >= " + age + " AND mem_age <= " + AgeMax
                 + " AND mem_poids >= " + poids + " AND mem_poids <= " + poidsMax
-                + " AND MEM_POULE is null AND mem_id not in (" + lstDone + ")";
+                + " AND MEM_POULE is null AND mem_id not in (" + lstDone + ")" + " AND mem_club not in (" + lstClub + ")";
 
             logger.Info("getMembre: requête = " + sql);
 
