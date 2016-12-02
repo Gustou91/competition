@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace Competition
 {
@@ -79,6 +80,8 @@ namespace Competition
                 Point pt = this.lvMembre1.PointToClient(new Point(e.X,
                 e.Y));
                 ListViewItem hoveritem = this.lvMembre1.GetItemAt(pt.X, pt.Y);
+
+                lvMembre1.Items.Add(hoveritem);
             }
         }
 
@@ -96,38 +99,15 @@ namespace Competition
             {
                 e.Effect = DragDropEffects.Copy;
             }
+            else
+            {
+                e.Effect = DragDropEffects.None;
+            }
             
             //MessageBox.Show("AllowDrop = " + lvMembre.AllowDrop.ToString());
 
         }
 
-
-        private void lvMembre2_DragDrop(object sender, DragEventArgs e)
-        {
-            ListViewItem item = e.Data.GetData(typeof(ListViewItem)) as ListViewItem;
-            if (item != null)
-            {
-                Point pt = this.lvMembre2.PointToClient(new Point(e.X,
-                e.Y));
-                ListViewItem hoveritem = this.lvMembre2.GetItemAt(pt.X, pt.Y);
-                lvMembre2.Items.Add(hoveritem);
-            }
-
-        }
-
-        private void lvMembre2_ItemDrag(object sender, ItemDragEventArgs e)
-        {
-            this.lvMembre2.DoDragDrop(this.lvMembre2.SelectedItems, DragDropEffects.Copy | DragDropEffects.Move);
-        }
-
-        private void lvMembre2_DragEnter(object sender, DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(typeof(ListViewItem)))
-            {
-                e.Effect = DragDropEffects.Copy;
-            }
-
-        }
         #endregion
 
 

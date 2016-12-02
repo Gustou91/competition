@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_main));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fichierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,13 +37,13 @@
             this.inscriptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.créerLesPoulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gérerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clubsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gérerLesPoulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.affectationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.réinitialiserLesPoulesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paramètresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.résultatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableauDeBordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clubsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,6 +117,13 @@
             this.gérerToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.gérerToolStripMenuItem.Text = "Gérer";
             // 
+            // clubsToolStripMenuItem
+            // 
+            this.clubsToolStripMenuItem.Name = "clubsToolStripMenuItem";
+            this.clubsToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.clubsToolStripMenuItem.Text = "Clubs";
+            this.clubsToolStripMenuItem.Click += new System.EventHandler(this.clubsToolStripMenuItem_Click);
+            // 
             // gérerLesPoulesToolStripMenuItem
             // 
             this.gérerLesPoulesToolStripMenuItem.Name = "gérerLesPoulesToolStripMenuItem";
@@ -158,19 +166,15 @@
             this.tableauDeBordToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.tableauDeBordToolStripMenuItem.Text = "Tableau de bord";
             // 
-            // clubsToolStripMenuItem
-            // 
-            this.clubsToolStripMenuItem.Name = "clubsToolStripMenuItem";
-            this.clubsToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.clubsToolStripMenuItem.Text = "Clubs";
-            this.clubsToolStripMenuItem.Click += new System.EventHandler(this.clubsToolStripMenuItem_Click);
-            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Competition.Properties.Resources.logo_USM_JU_JIT_SO_2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1204, 481);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frm_main";

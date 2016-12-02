@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoPlusPetit.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="log4net">
       <HintPath>..\..\log4net-1.2.13\bin\net-cp\4.0\release\log4net.dll</HintPath>
@@ -162,6 +165,10 @@
     <None Include="Resources\Fille.bmp" />
     <None Include="Resources\Fille.png" />
     <None Include="Resources\Garçon.png" />
+    <None Include="Resources\logo_USM JU-JIT-SO 2.jpg" />
+    <None Include="Resources\LogoPlusPetit.PNG" />
+    <None Include="Resources\LogoPetit.PNG" />
+    <Content Include="LogoPlusPetit.ico" />
     <Content Include="SQLite.Interop.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

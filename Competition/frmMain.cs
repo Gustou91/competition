@@ -44,8 +44,8 @@ namespace Competition
         private void gérerLesCompétitionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAddCompet frm = new frmAddCompet();
-            frm.MdiParent = this;
-            frm.Show();
+            //frm.MdiParent = this;
+            frm.ShowDialog();
         }
 
         private void gérerLesCatégoriesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -66,8 +66,8 @@ namespace Competition
         private void gérerLesPoulesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmPoule frm = new frmPoule();
-            frm.MdiParent = this;
-            frm.Show();
+            //frm.MdiParent = this;
+            frm.ShowDialog();
         }
 
         private void créerLesPoulesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -97,8 +97,8 @@ namespace Competition
         private void clubsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmClub frm = new frmClub();
-            frm.MdiParent = this;
-            frm.Show();
+            //frm.MdiParent = this;
+            frm.ShowDialog();
         }
 
         private void réinitialiserLesPoulesToolStripMenuItem_Click(object sender, EventArgs e)

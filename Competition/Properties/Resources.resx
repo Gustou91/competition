@@ -124,4 +124,13 @@
   <data name="Garçon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Garçon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LogoPetit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoPetit.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LogoPlusPetit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogoPlusPetit.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo_USM_JU_JIT_SO_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_USM JU-JIT-SO 2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

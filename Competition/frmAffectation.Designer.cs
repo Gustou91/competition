@@ -34,9 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lvMembre1 = new System.Windows.Forms.ListView();
             this.ilIcon = new System.Windows.Forms.ImageList(this.components);
-            this.lvMembre2 = new System.Windows.Forms.ListView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cbPoule2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // cbPoule1
@@ -76,44 +73,12 @@
             this.ilIcon.Images.SetKeyName(0, "Garçon.png");
             this.ilIcon.Images.SetKeyName(1, "Fille.png");
             // 
-            // lvMembre2
-            // 
-            this.lvMembre2.AllowDrop = true;
-            this.lvMembre2.Location = new System.Drawing.Point(579, 47);
-            this.lvMembre2.Name = "lvMembre2";
-            this.lvMembre2.Size = new System.Drawing.Size(547, 182);
-            this.lvMembre2.TabIndex = 3;
-            this.lvMembre2.UseCompatibleStateImageBehavior = false;
-            this.lvMembre2.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.lvMembre2_ItemDrag);
-            this.lvMembre2.DragDrop += new System.Windows.Forms.DragEventHandler(this.lvMembre2_DragDrop);
-            this.lvMembre2.DragEnter += new System.Windows.Forms.DragEventHandler(this.lvMembre2_DragEnter);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(581, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Poule 2";
-            // 
-            // cbPoule2
-            // 
-            this.cbPoule2.FormattingEnabled = true;
-            this.cbPoule2.Location = new System.Drawing.Point(625, 12);
-            this.cbPoule2.Name = "cbPoule2";
-            this.cbPoule2.Size = new System.Drawing.Size(113, 21);
-            this.cbPoule2.TabIndex = 4;
-            // 
             // frmAffectation
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1135, 241);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbPoule2);
-            this.Controls.Add(this.lvMembre2);
+            this.ClientSize = new System.Drawing.Size(569, 241);
             this.Controls.Add(this.lvMembre1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbPoule1);
@@ -131,8 +96,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView lvMembre1;
         private System.Windows.Forms.ImageList ilIcon;
-        private System.Windows.Forms.ListView lvMembre2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox cbPoule2;
     }
 }

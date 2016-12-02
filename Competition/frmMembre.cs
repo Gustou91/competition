@@ -175,8 +175,8 @@ namespace Competition
         // Adaptation de la taille du DataGridView à la taille de la fenêtre.
         private void dgvMembreDisplay()
         {
-            dgvMembre.Height = this.Size.Height - (dgvMembre.Top + 20 );
-            dgvMembre.Width = this.Size.Width - 27;
+            dgvMembre.Height = this.Size.Height - (dgvMembre.Top + 50);
+            dgvMembre.Width = this.Size.Width - 60;
             this.Width = 780;
 
         }
